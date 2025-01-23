@@ -1,4 +1,4 @@
-**## Jogando para o Amanhã**
+# Jogando para o Amanhã
  *Projeto de Iniciação Científica da UFJF*
 O projeto visa inicialmente despertar o interesse das meninas refugiadas pelo estudo de programação. 
 O objetivo é desenvolver um jogo funcional, com elementos lúdicos, que sirva como ferramenta de aprendizado e motivação, 
