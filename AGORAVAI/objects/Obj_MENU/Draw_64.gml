@@ -3,7 +3,7 @@
 draw_set_font(ft_MENU);
 draw_set_color(c_white);
 
-var dist = 55;
+var dist = 50;
 var gui_largura = display_get_gui_width();
 var gui_altura = display_get_gui_height();
 
@@ -18,17 +18,35 @@ show_debug_message(m_y);
 
 for(var i=0; i < op_max; i++)
 {
-// draw_set_halign(fa_center);
 
-/*if(index == i)
-{
-	draw_set_color(c_purple);
-}
-else
-{
-	draw_set_color(c_white); */
-
- draw_text(x1+dist,y1+(dist*i),opcoes[i]);
+ var y2 = y1+(dist*i);
+ var x2 = x1 + dist;
+ index = i;
+ 
+	
+ var string_w = string_width(opcoes[i]);
+ var string_h = string_height(opcoes[i]);
+ 
+ 
+ if(point_in_rectangle(m_x,m_y,x1 - string_w / 2,y2 - string_h / 2, x2 + string_w / 2, y2 + string_h / 2 ))
+ {
+	 draw_set_color(c_purple);
+	 if(mouse_check_button_pressed(mb_left))
+	 {
+		 if(index == 2)
+			game_end();
+		
+		if(index == 0)
+			room_goto(Fase1);
+			
+	 }		
+ }	
+ else
+ {
+	 draw_set_color(c_black);
+ }	 
+	 
+	 draw_text(x2,y2,opcoes[i]);
 }	
 
 draw_set_font(-1);

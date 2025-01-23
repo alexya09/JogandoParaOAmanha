@@ -37,13 +37,15 @@
     {"id":{"name":"ft_MENU","path":"fonts/ft_MENU/ft_MENU.yy",},},
     {"id":{"name":"Obj_MENU","path":"objects/Obj_MENU/Obj_MENU.yy",},},
     {"id":{"name":"Object1","path":"objects/Object1/Object1.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Fase1","path":"rooms/Fase1/Fase1.yy",},},
+    {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"Fase1","path":"rooms/Fase1/Fase1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
