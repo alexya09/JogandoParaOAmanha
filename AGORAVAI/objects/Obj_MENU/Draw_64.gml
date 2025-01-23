@@ -28,7 +28,7 @@ for(var i=0; i < op_max; i++)
  var string_h = string_height(opcoes[i]);
  
  
- if(point_in_rectangle(m_x,m_y,x1 - string_w / 2,y2 - string_h / 2, x2 + string_w / 2, y2 + string_h / 2 ))
+ if(point_in_rectangle(m_x,m_y,x1 - string_w / (3/2),y2 - string_h / (3/2), x2 + string_w / (3/2), y2 + string_h / (3/2) ))
  {
 	 draw_set_color(c_purple);
 	 if(mouse_check_button_pressed(mb_left))
