@@ -4,3 +4,5 @@ opcoes = ["Jogar", "Opções", "Sair"];
 
 
 op_max = array_length(opcoes);
+
+
