@@ -35,7 +35,7 @@ for(var i=0; i < array_length(menu_op); i++)
 	 draw_set_color(c_white);
 	 if(mouse_check_button_pressed(mb_left))
 	 {
-		 if(index == 2)
+		 if(index == 3)
 		{
 			instance_deactivate_object(obj_opcoes);
 			instance_activate_object(Obj_MENU);
