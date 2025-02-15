@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"AGORAVAI",
-    "path":"AGORAVAI.yyp",
+    "name":"Menu",
+    "path":"folders/Sprites/Menu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

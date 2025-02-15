@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_MENU",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_paiNPC",
+  "eventList":[],
   "managed":true,
-  "name":"Obj_MENU",
+  "name":"obj_paiNPC",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"NPCs",
+    "path":"folders/Objects/NPCs.yy",
   },
   "parentObjectId":null,
   "persistent":false,

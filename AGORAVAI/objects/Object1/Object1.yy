@@ -8,8 +8,8 @@
   "name":"Object1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Menu",
+    "path":"folders/Objects/Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

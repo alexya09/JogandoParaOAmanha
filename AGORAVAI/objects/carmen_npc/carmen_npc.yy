@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_MENU",
+  "%Name":"carmen_npc",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_MENU",
+  "name":"carmen_npc",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"NPCs",
+    "path":"folders/Objects/NPCs.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_paiNPC",
+    "path":"objects/obj_paiNPC/obj_paiNPC.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite3",
+    "path":"sprites/Sprite3/Sprite3.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
