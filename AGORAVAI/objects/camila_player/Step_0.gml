@@ -1,6 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 // Definição de velocidade
+
 var move_speed = 4;
 
 // Pegando a entrada do jogador
@@ -16,15 +17,16 @@ if (move_x != 0 || move_y != 0) {
 
 // Aplicando o movimento
 x += move_x * move_speed;
-y += move_y * move_speed;
+y += move_y * move_speed; 
 
 // DIALOGO
 
-if (distance_to_object(obj_paiNPC) <= 10)
+if (distance_to_object(oParentNPC) <= 10)
 {
 	if(keyboard_check_pressed(ord("E"))){
-		var _npc = instance_nearest(x,y,obj_paiNPC);
-		var _dialogo = instance_create_layer(x,y,"Dialogo",obj_dialogo);
+		var _npc = instance_nearest(x,y,oParentNPC);
+		var _dialogo = instance_create_layer(x,y,"Dialogo",oDialogue);
 		_dialogo.npc_nome = _npc.nome;
 	}
 }
+

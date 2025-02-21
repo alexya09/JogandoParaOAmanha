@@ -23,7 +23,7 @@ for(var i=0; i < op_max; i++)
 
  var y2 = y1+(dist*i);
  var x2 = x1 + dist;
- index = i;
+ var index = i;
  
 	
  var string_w = string_width(opcoes[i]);
