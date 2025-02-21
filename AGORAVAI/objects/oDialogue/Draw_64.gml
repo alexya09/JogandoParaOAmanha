@@ -20,7 +20,7 @@ if(inicializar == true)
 	if(textos_grid[#Infos.Lado, pagina] == 0) // esquerda
 	{
 	
-
+		//d_ativo = true;
 		show_debug_message("DESENHAR");
 		show_debug_message("Valor de global.dialogue: " + string(global.dialogue));
 		draw_sprite_ext(DialogueBox,0,_xx+200,_yy,3,3,0,c_white,1);

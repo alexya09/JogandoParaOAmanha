@@ -12,3 +12,4 @@ textos_grid = ds_grid_create(4,0);
 inicializar = false;
 pagina =0;
 global.dialogue = false;
+//d_ativo = false;
