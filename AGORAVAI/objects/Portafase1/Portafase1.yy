@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"camila_player",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Portafase1",
+  "eventList":[],
   "managed":true,
-  "name":"camila_player",
+  "name":"Portafase1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Players",
-    "path":"folders/Objects/Players.yy",
+    "name":"Fase0",
+    "path":"folders/Objects/Fase0.yy",
   },
-  "parentObjectId":{
-    "name":"oParentPlayer",
-    "path":"objects/oParentPlayer/oParentPlayer.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"camila",
-    "path":"sprites/camila/camila.yy",
+    "name":"porta1",
+    "path":"sprites/porta1/porta1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
