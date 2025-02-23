@@ -22,9 +22,6 @@ if (move_x != 0 || move_y != 0) {
 vel_x = move_x * vel;
 vel_y = move_y * vel;
 
-
-
-
 // Colisões 
 if (place_meeting(x + vel_x, y, all)) {
     vel_x = 0; 
@@ -36,9 +33,16 @@ if (place_meeting(x, y + vel_y, all)) {
 }
 
 
+//Depth
+depth = -bbox_bottom
+
 //Movimento
 x += vel_x;
 y += vel_y;
+
+
+
+//Seleção de Sprites
 
 if ((vel_x != 0) or (vel_y != 0)){
     

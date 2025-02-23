@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"Sala principal MD",
-    "path":"folders/Sprites/Sala principal MD.yy",
+    "name":"Fase0",
+    "path":"folders/Sprites/Fase0.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
