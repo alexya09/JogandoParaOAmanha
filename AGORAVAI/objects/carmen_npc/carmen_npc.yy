@@ -41,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite3",
-    "path":"sprites/Sprite3/Sprite3.yy",
+    "name":"Carmen",
+    "path":"sprites/Carmen/Carmen.yy",
   },
   "spriteMaskId":null,
   "visible":true,

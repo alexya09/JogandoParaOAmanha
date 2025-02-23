@@ -1,12 +1,14 @@
 /// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-// Definição de velocidade
-
-var move_speed = 4;
 
 // Pegando a entrada do jogador
-var move_x = keyboard_check(vk_right) - keyboard_check(vk_left);
-var move_y = keyboard_check(vk_down) - keyboard_check(vk_up);
+ up = keyboard_check(vk_up);
+ down =  keyboard_check(vk_down);
+ right =  keyboard_check(vk_right);
+ left =  keyboard_check(vk_left);
+ 
+//Transformando em movimento
+move_x = right - left;
+move_y = down - up;
 
 // Normalizando a direção para manter velocidade constante na diagonal
 if (move_x != 0 || move_y != 0) {
@@ -15,9 +17,43 @@ if (move_x != 0 || move_y != 0) {
     move_y /= length;
 }
 
-// Aplicando o movimento
-x += move_x * move_speed;
-y += move_y * move_speed; 
+//Transformando deslocamento em velocidade
+
+vel_x = move_x * vel;
+vel_y = move_y * vel;
+show_debug_message("Vel X: " + string(vel_x) + " Vel Y: " + string(vel_y));
+
+
+
+// Colisões 
+if (place_meeting(x + vel_x, y, all)) {
+    vel_x = 0; // Impede o movimento horizontal em caso de colisão
+     show_debug_message("Collision detected in X direction")
+}
+
+if (place_meeting(x, y + vel_y, all)) {
+    vel_y = 0; // Impede o movimento vertical em caso de colisão
+    show_debug_message("Collision detected in Y direction")
+}
+
+
+//Movimento
+x += vel_x;
+y += vel_y;
+
+// Sprite de movimento (ainda não tenho os sprites dela andando, então tá no idle
+
+if (vel_x > 0) { face = RIGHT;} 
+    
+if (vel_x < 0) { face = LEFT;}
+    
+if (vel_y < 0) { face = UP;}
+    
+if (vel_y > 0) { face = DOWN;}
+    
+sprite_index = spr_idle [face];
+// quando tiver o sprite dela andando troca pelo spr_walk q criar no create
+    
 
 // DIALOGO
 
