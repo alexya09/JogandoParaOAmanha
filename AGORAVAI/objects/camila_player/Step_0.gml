@@ -41,6 +41,20 @@ if (place_meeting(x, y + vel_y, all)) {
 x += vel_x;
 y += vel_y;
 
+// Sprite de movimento (ainda não tenho os sprites dela andando, então tá no idle
+
+if (vel_x > 0) { face = RIGHT;} 
+    
+if (vel_x < 0) { face = LEFT;}
+    
+if (vel_y < 0) { face = UP;}
+    
+if (vel_y > 0) { face = DOWN;}
+    
+sprite_index = spr_idle [face];
+// quando tiver o sprite dela andando troca pelo spr_walk q criar no create
+    
+
 // DIALOGO
 
 if (distance_to_object(oParentNPC) <= 10)
