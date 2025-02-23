@@ -21,19 +21,18 @@ if (move_x != 0 || move_y != 0) {
 
 vel_x = move_x * vel;
 vel_y = move_y * vel;
-show_debug_message("Vel X: " + string(vel_x) + " Vel Y: " + string(vel_y));
+
 
 
 
 // Colisões 
 if (place_meeting(x + vel_x, y, all)) {
-    vel_x = 0; // Impede o movimento horizontal em caso de colisão
-     show_debug_message("Collision detected in X direction")
+    vel_x = 0; 
+     
 }
 
 if (place_meeting(x, y + vel_y, all)) {
-    vel_y = 0; // Impede o movimento vertical em caso de colisão
-    show_debug_message("Collision detected in Y direction")
+    vel_y = 0; 
 }
 
 
@@ -41,7 +40,17 @@ if (place_meeting(x, y + vel_y, all)) {
 x += vel_x;
 y += vel_y;
 
-// Sprite de movimento (ainda não tenho os sprites dela andando, então tá no idle
+if ((vel_x != 0) or (vel_y != 0)){
+    
+    movement = WALK;
+}
+
+else {
+    
+    movement = IDLE;
+}
+
+
 
 if (vel_x > 0) { face = RIGHT;} 
     
@@ -51,9 +60,9 @@ if (vel_y < 0) { face = UP;}
     
 if (vel_y > 0) { face = DOWN;}
     
-sprite_index = spr_idle [face];
-// quando tiver o sprite dela andando troca pelo spr_walk q criar no create
     
+sprite_index = sprite [movement] [face];
+   
 
 // DIALOGO
 
