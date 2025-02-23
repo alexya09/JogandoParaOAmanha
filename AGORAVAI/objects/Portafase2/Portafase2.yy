@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"porta2",
-    "path":"sprites/porta2/porta2.yy",
+    "name":"spr_porta2",
+    "path":"sprites/spr_porta2/spr_porta2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

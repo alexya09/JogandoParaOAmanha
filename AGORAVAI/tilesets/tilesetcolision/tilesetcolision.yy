@@ -1,25 +1,25 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"tile_pisosalaprincipal",
+  "%Name":"tilesetcolision",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"tile_pisosalaprincipal",
-  "out_columns":12,
+  "name":"tilesetcolision",
+  "out_columns":1,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"piso",
-    "path":"sprites/piso/piso.yy",
+    "name":"tile_collision",
+    "path":"sprites/tile_collision/tile_collision.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":136,
+  "tile_count":1,
 }

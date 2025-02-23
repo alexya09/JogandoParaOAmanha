@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"escada",
-    "path":"sprites/escada/escada.yy",
+    "name":"spr_escada",
+    "path":"sprites/spr_escada/spr_escada.yy",
   },
   "spriteMaskId":null,
   "visible":true,

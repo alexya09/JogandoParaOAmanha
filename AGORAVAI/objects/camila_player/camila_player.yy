@@ -3,6 +3,7 @@
   "%Name":"camila_player",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"camila_player",
@@ -11,10 +12,7 @@
     "name":"Players",
     "path":"folders/Objects/Players.yy",
   },
-  "parentObjectId":{
-    "name":"oParentPlayer",
-    "path":"objects/oParentPlayer/oParentPlayer.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"camila",
-    "path":"sprites/camila/camila.yy",
+    "name":"spr_camila_idle_down",
+    "path":"sprites/spr_camila_idle_down/spr_camila_idle_down.yy",
   },
   "spriteMaskId":null,
   "visible":true,

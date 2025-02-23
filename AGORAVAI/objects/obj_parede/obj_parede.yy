@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"parede",
-    "path":"sprites/parede/parede.yy",
+    "name":"spr_parede",
+    "path":"sprites/spr_parede/spr_parede.yy",
   },
   "spriteMaskId":null,
   "visible":true,

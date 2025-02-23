@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Portafase1",
+  "%Name":"obj_colisor_fase0",
   "eventList":[],
   "managed":true,
-  "name":"Portafase1",
+  "name":"obj_colisor_fase0",
   "overriddenProperties":[],
   "parent":{
     "name":"Fase0",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_porta1",
-    "path":"sprites/spr_porta1/spr_porta1.yy",
+    "name":"spr_colisor_fase0",
+    "path":"sprites/spr_colisor_fase0/spr_colisor_fase0.yy",
   },
   "spriteMaskId":null,
   "visible":true,
