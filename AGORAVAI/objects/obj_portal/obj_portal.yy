@@ -1,22 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"Portafase1",
+  "%Name":"obj_portal",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Portafase1",
+  "name":"obj_portal",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fase0",
-    "path":"folders/Objects/Fase0.yy",
+    "name":"Utilitarios",
+    "path":"folders/Objects/Utilitarios.yy",
   },
-  "parentObjectId":{
-    "name":"obj_collider",
-    "path":"objects/obj_collider/obj_collider.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_porta1",
-    "path":"sprites/spr_porta1/spr_porta1.yy",
+    "name":"spr_portal",
+    "path":"sprites/spr_portal/spr_portal.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

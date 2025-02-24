@@ -23,12 +23,12 @@ vel_x = move_x * vel;
 vel_y = move_y * vel;
 
 // Colisões 
-if (place_meeting(x + vel_x, y, all)) {
+if (place_meeting(x + vel_x, y, obj_collider)) {
     vel_x = 0; 
      
 }
 
-if (place_meeting(x, y + vel_y, all)) {
+if (place_meeting(x, y + vel_y, obj_collider)) {
     vel_y = 0; 
 }
 

@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_portafrente",
+  "%Name":"obj_collider",
   "eventList":[],
   "managed":true,
-  "name":"obj_portafrente",
+  "name":"obj_collider",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fase1",
-    "path":"folders/Objects/Fase1.yy",
+    "name":"Utilitarios",
+    "path":"folders/Objects/Utilitarios.yy",
   },
   "parentObjectId":{
-    "name":"obj_collider",
-    "path":"objects/obj_collider/obj_collider.yy",
+    "name":"obj_depth",
+    "path":"objects/obj_depth/obj_depth.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_portafrente",
-    "path":"sprites/spr_portafrente/spr_portafrente.yy",
+    "name":"spr_collider",
+    "path":"sprites/spr_collider/spr_collider.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
