@@ -35,3 +35,5 @@ sprite [WALK][RIGHT] = spr_camila_walk_right;
 sprite [WALK][LEFT] = spr_camila_walk_left;
 sprite [WALK][UP] = spr_camila_walk_up;
 sprite [WALK][DOWN] = spr_camila_walk_down;
+
+
