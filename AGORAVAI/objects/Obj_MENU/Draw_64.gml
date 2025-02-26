@@ -39,7 +39,7 @@ for(var i=0; i < op_max; i++)
 			game_end();
 		
 		if(index == 0)
-			room_goto(Fase1);
+			room_goto(Fase0);
 		if(index == 1)
 		{
 			instance_create_layer(0, 0, "Assets_3", obj_opcoes);

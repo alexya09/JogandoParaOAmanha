@@ -1,12 +1,14 @@
 /// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-// Definição de velocidade
-
-var move_speed = 4;
 
 // Pegando a entrada do jogador
-var move_x = keyboard_check(vk_right) - keyboard_check(vk_left);
-var move_y = keyboard_check(vk_down) - keyboard_check(vk_up);
+ up = keyboard_check(vk_up);
+ down =  keyboard_check(vk_down);
+ right =  keyboard_check(vk_right);
+ left =  keyboard_check(vk_left);
+ 
+//Transformando em movimento
+move_x = right - left;
+move_y = down - up;
 
 // Normalizando a direção para manter velocidade constante na diagonal
 if (move_x != 0 || move_y != 0) {
@@ -15,9 +17,56 @@ if (move_x != 0 || move_y != 0) {
     move_y /= length;
 }
 
-// Aplicando o movimento
-x += move_x * move_speed;
-y += move_y * move_speed; 
+//Transformando deslocamento em velocidade
+
+vel_x = move_x * vel;
+vel_y = move_y * vel;
+
+// Colisões 
+if (place_meeting(x + vel_x, y, obj_collider)) {
+    vel_x = 0; 
+     
+}
+
+if (place_meeting(x, y + vel_y, obj_collider)) {
+    vel_y = 0; 
+}
+
+
+//Depth
+depth = -bbox_bottom
+
+//Movimento
+x += vel_x;
+y += vel_y;
+
+
+
+//Seleção de Sprites
+
+if ((vel_x != 0) or (vel_y != 0)){
+    
+    movement = WALK;
+}
+
+else {
+    
+    movement = IDLE;
+}
+
+
+
+if (vel_x > 0) { face = RIGHT;} 
+    
+if (vel_x < 0) { face = LEFT;}
+    
+if (vel_y < 0) { face = UP;}
+    
+if (vel_y > 0) { face = DOWN;}
+    
+    
+sprite_index = sprite [movement] [face];
+   
 
 // DIALOGO
 
