@@ -1,21 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"o_Box1",
+  "%Name":"oBlocoParede",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_Box1",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_PushPull","path":"objects/o_PushPull/o_PushPull.yy",},"propertyId":{"name":"collision_type","path":"objects/o_PushPull/o_PushPull.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"",},
-  ],
+  "name":"oBlocoParede",
+  "overriddenProperties":[],
   "parent":{
-    "name":"Fase1",
-    "path":"folders/Objects/Fase1.yy",
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
   },
   "parentObjectId":{
-    "name":"o_PushPull",
-    "path":"objects/o_PushPull/o_PushPull.yy",
+    "name":"obj_collider",
+    "path":"objects/obj_collider/obj_collider.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,10 +31,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"Sprite38",
-    "path":"sprites/Sprite38/Sprite38.yy",
+    "name":"blocoParede",
+    "path":"sprites/blocoParede/blocoParede.yy",
   },
   "spriteMaskId":null,
   "visible":true,

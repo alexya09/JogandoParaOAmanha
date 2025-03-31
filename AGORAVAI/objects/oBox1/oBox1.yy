@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"o_PushPull",
+  "%Name":"oBox1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_PushPull",
+  "name":"oBox1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Fase1",
+    "path":"folders/Objects/Fase1.yy",
   },
   "parentObjectId":{
-    "name":"obj_collider",
-    "path":"objects/obj_collider/obj_collider.yy",
+    "name":"o_PushBlocks",
+    "path":"objects/o_PushBlocks/o_PushBlocks.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -29,13 +28,14 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"collision_type","filters":[],"listItems":[],"multiselect":false,"name":"collision_type","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":6,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sPushBlocks",
+    "path":"sprites/sPushBlocks/sPushBlocks.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

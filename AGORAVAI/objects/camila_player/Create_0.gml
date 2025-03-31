@@ -37,3 +37,7 @@ sprite [WALK][UP] = spr_camila_walk_up;
 sprite [WALK][DOWN] = spr_camila_walk_down;
 
 
+// interação com caixa
+
+interactDist = 4;
+interactKey = noone;

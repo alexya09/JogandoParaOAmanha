@@ -5,6 +5,7 @@
  down =  keyboard_check(vk_down);
  right =  keyboard_check(vk_right);
  left =  keyboard_check(vk_left);
+ interactKey = keyboard_check_pressed(vk_space);
  
 //Transformando em movimento
 move_x = right - left;
@@ -81,68 +82,22 @@ if (distance_to_object(oParentNPC) <= 10)
 	}
 }
 
-// PUSH
+// caixa caixa
 
-var move_speed = 1;
-
-// Movimento básico
-var hmove = keyboard_check(vk_right) - keyboard_check(vk_left);
-var vmove = keyboard_check(vk_down) - keyboard_check(vk_up);
-
-// Movimentação horizontal
-if (hmove != 0) {
-    if (!place_meeting(x + hmove * move_speed, y, o_Box1)) {
-        x += hmove * move_speed;
-    } else {
-        // Checando se pode empurrar o bloco
-        var block = instance_place(x + hmove * move_speed, y, o_Box1);
-        if (block) {
-            // Verificando se o bloco pode se mover
-            if (!place_meeting(block.x + hmove * move_speed, block.y, o_Box1)) {
-                block.x += hmove * move_speed;
-                x += hmove * move_speed;
-            }
-        }
-    }
+if(interactKey == true)
+{
+	var checkDir = face * 90;
+	
+	var checkX = x + lengthdir_x(interactDist,checkDir);
+	var checkY = y + lengthdir_y(interactDist,checkDir);
+	
+	var pushBlocksInst = instance_place(checkX,checkY,o_PushBlocks);
+	
+	if (instance_exists(pushBlocksInst) && pushBlocksInst.sliding == false)
+	{
+		pushBlocksInst.sliding = true;
+		pushBlocksInst.faceDir = face;
+	}
 }
 
-// Movimentação vertical
-if (vmove != 0) {
-    if (!place_meeting(x, y + vmove * move_speed, o_Box1)) {
-        y += vmove * move_speed;
-    } else {
-        // Checando se pode empurrar o bloco
-        var block = instance_place(x, y + vmove * move_speed, o_Box1);
-        if (block) {
-            // Verificando se o bloco pode se mover
-            if (!place_meeting(block.x, block.y + vmove * move_speed, o_Box1)) {
-                block.y += vmove * move_speed;
-                y += vmove * move_speed;
-            }
-        }
-    }
-}
-
-  /*  var block = instance_nearest(x, y, o_Box1);
-
-    // Verificando se o bloco está próximo o suficiente
-    if (block && point_distance(x, y, block.x, block.y) < 32) {
-        var dir_x = sign(block.x - x);
-        var dir_y = sign(block.y - y);
-
-        // Puxar horizontalmente
-        if (dir_x != 0 && place_free(x - dir_x * move_speed, y) &&
-            !place_meeting(block.x - dir_x * move_speed, block.y, o_Box1)) {
-            block.x -= dir_x * move_speed;
-            x -= dir_x * move_speed;
-        }
-
-        // Puxar verticalmente
-        if (dir_y != 0 && place_free(x, y - dir_y * move_speed) &&
-            !place_meeting(block.x, block.y - dir_y * move_speed, o_Box1)) {
-            block.y -= dir_y * move_speed;
-            y -= dir_y * move_speed;
-        }
-    }
-
-*/
+//show_debug_message("My depth:camila " + string(-bbox_bottom));

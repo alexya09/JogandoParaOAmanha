@@ -1,7 +1,4 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-
-var box = instance_nearest(x, y, o_Box1);
+var box = instance_nearest(x, y, o_PushBlocks);
 
 
 if (box != noone && distance_to_object(box) <= 5)
