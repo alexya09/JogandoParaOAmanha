@@ -8,7 +8,7 @@ faceDir = noone;
 
 //how far we need to go
 
-gridSpace = 32;
+gridSpace = 16;
 
 startPointX = x;
 startPointY = y;
@@ -20,3 +20,5 @@ targetY = y;
 sliding = false;
 
 tipoBloco = "inteiro";
+
+pushBlockArea = false;

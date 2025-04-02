@@ -98,6 +98,15 @@ if(interactKey == true)
 		pushBlocksInst.sliding = true;
 		pushBlocksInst.faceDir = face;
 	}
+	/*
+	
+	var pushBlocksInst1 = instance_place(checkX,checkY,oBox1);
+	
+	if (instance_exists(pushBlocksInst1) && pushBlocksInst1.sliding == false)
+	{
+		pushBlocksInst1.sliding = true;
+		pushBlocksInst1.faceDir = face;
+	} */
 }
 
 //show_debug_message("My depth:camila " + string(-bbox_bottom));

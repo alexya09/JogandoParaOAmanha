@@ -14,6 +14,18 @@ depth = -bbox_bottom;
 		
 	}
 	
+	//get ground type 
+	
+	if(place_meeting(x,y,oPushBlocksArea))
+	{
+		pushBlockArea = true;
+	}
+	
+	else
+	{
+		pushBlockArea = false;
+	}
+	
 	if (sliding == true)
 	{
 		var realDir = faceDir * 90;
@@ -25,16 +37,28 @@ depth = -bbox_bottom;
 		
 		var targetDist = point_distance(x,y,targetX,targetY);
 		var finalSpd = min(moveSpd, targetDist);
-		
-		
 		xspd = lengthdir_x(finalSpd,realDir);
 		yspd = lengthdir_y(finalSpd,realDir);
+		
+		if ((pushBlockArea == true) && (!place_meeting(targetX, targetY,oPushBlocksArea)))
+		{
+			xspd = 0;
+			yspd = 0;
+		}
+			
 		
 		if(place_meeting(targetX,targetY,oBlocoParede))
 		{
 			xspd = 0;
 			yspd = 0;
 		}
+		
+		/*
+		if(place_meeting(targetX,targetY,oBox1))
+		{
+			xspd = 0;
+			yspd = 0;
+		} */
 	}
 	
 	
@@ -42,14 +66,14 @@ depth = -bbox_bottom;
 	y += yspd;
 	
 	x += xspd;
-y += yspd;
+	y += yspd;
 
-// Verifica se o bloco está próximo do destino e força a posição correta
+/* 
 if (point_distance(x, y, targetX, targetY) < moveSpd) {
     x = targetX;
     y = targetY;
     sliding = false;
-}
+} */
 
 	
 	if(xspd == 0 && yspd ==0)

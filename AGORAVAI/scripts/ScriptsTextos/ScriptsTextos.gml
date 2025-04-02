@@ -2,10 +2,10 @@
 function src_textos() {
     switch (npc_nome) {
         case "Carmen_npc":
-            ds_grid_add_text(textos_grid,"OIIII", Sprite11, 0, "Carmen");
-            ds_grid_add_text(textos_grid, "tUDO BEM?????", Sprite11, 0, "Carmen");
-            ds_grid_add_text(textos_grid, "SAUDADES", Sprite11, 0, "Carmen");
-            ds_grid_add_text(textos_grid, "quem é voce??????", Sprite11, 0, "Camila"); // Corrigido para carmen_portrait
+            ds_grid_add_text(textos_grid,"oi", Sprite11, 0, "Carmen");
+            ds_grid_add_text(textos_grid, "o que vose que do macdolnald", Sprite11, 0, "Carmen");
+            ds_grid_add_text(textos_grid, "bugget", Sprite11, 0, "Carmen");
+            ds_grid_add_text(textos_grid, "tchal", Sprite11, 0, "Camila"); // Corrigido para carmen_portrait
             break;
     }
 }
