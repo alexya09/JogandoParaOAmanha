@@ -1,34 +1,118 @@
 /// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-/*
-var dir = keyboard_check(vk_right)
-var esq = keyboard_check(vk_left)
-var up = keyboard_check(vk_up)
-var down = keyboard_check(vk_down)
+if (state_char = PLAYER){
+	// Pegando a entrada do jogador
+	 up = keyboard_check(vk_up);
+	 down =  keyboard_check(vk_down);
+	 right =  keyboard_check(vk_right);
+	 left =  keyboard_check(vk_left);
+	 interactKey = keyboard_check_pressed(vk_space);
+ 
+	//Transformando em movimento
+	move_x = right - left;
+	move_y = down - up;
 
-velH = (dir - esq) * VEL
-velV = (down - up) * VEL
+	// Normalizando a direção para manter velocidade constante na diagonal
+	if (move_x != 0 || move_y != 0) {
+	    var length = sqrt(move_x * move_x + move_y * move_y);
+	    move_x /= length;
+	    move_y /= length;
+	}
 
-x += velH
-y += velV
+	//Transformando deslocamento em velocidade
 
-if velH != 0 or velV != 0
-{
-	movendo = 1
+	vel_x = move_x * vel;
+	vel_y = move_y * vel;
+
+	// Colisões 
+	if (place_meeting(x + vel_x, y, obj_collider)) {
+	    vel_x = 0; 
+     
+	}
+
+	if (place_meeting(x, y + vel_y, obj_collider)) {
+	    vel_y = 0; 
+	}
+
+
+	//Depth
+	depth = -bbox_bottom
+
+	//Movimento
+	x += vel_x;
+	y += vel_y;
+
+
+
+	//Seleção de Sprites
+
+	if ((vel_x != 0) or (vel_y != 0)){
+    
+	    movement = WALK;
+	}
+
+	else {
+    
+	    movement = IDLE;
+	}
+
+
+
+	if (vel_x > 0) { face = RIGHT;} 
+    
+	if (vel_x < 0) { face = LEFT;}
+    
+	if (vel_y < 0) { face = UP;}
+    
+	if (vel_y > 0) { face = DOWN;}
+    
+    
+	sprite_index = sprite [movement] [face];
+   
+	var horizontal_movement = vel_x;
+	var vertical_movement = vel_y;
+
+	// DIALOGO
+
+	if (distance_to_object(oParentNPC) <= 10)
+	{
+		if(keyboard_check_pressed(ord("E"))){
+			var _npc = instance_nearest(x,y,oParentNPC);
+			var _dialogo = instance_create_layer(x,y,"Dialogo",oDialogue);
+			_dialogo.npc_nome = _npc.nome;
+		}
+	}
+
+	// caixa caixa
+
+	if(interactKey == true)
+	{
+		var checkDir = face * 90;
+	
+		var checkX = x + lengthdir_x(interactDist,checkDir);
+		var checkY = y + lengthdir_y(interactDist,checkDir);
+	
+		var pushBlocksInst = instance_place(checkX,checkY,o_PushBlocks);
+	
+		if (instance_exists(pushBlocksInst) && pushBlocksInst.sliding == false)
+		{
+			pushBlocksInst.sliding = true;
+			pushBlocksInst.faceDir = face;
+		}
+}	
+	/*
+	
+	var pushBlocksInst1 = instance_place(checkX,checkY,oBox1);
+	
+	if (instance_exists(pushBlocksInst1) && pushBlocksInst1.sliding == false)
+	{
+		pushBlocksInst1.sliding = true;
+		pushBlocksInst1.faceDir = face;
+	} */
+}
+	
+	
+else if (state_char == NPC) {
+    // Lógica de NPC 
 }
 
-else
-{
-	movendo = 0
-}
-
-if(dir) lado = 3
-if(esq) lado = 2
-if(down) lado = 0
-if(up) lado = 1
-
-
-sprite_index = sprites[movendo][lado]
-*/
-
-// chamar função de movimentação
+//show_debug_message("My depth:camila " + string(-bbox_bottom));

@@ -1,7 +1,3 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-
-/*if(instance_exists(oDialogue))
-{
-	global.dialogue = true;
-} */
+if (keyboard_check_pressed(ord("F"))) { // Substitua 'F' pela tecla desejada
+    ScriptPlayertoNPC();
+}

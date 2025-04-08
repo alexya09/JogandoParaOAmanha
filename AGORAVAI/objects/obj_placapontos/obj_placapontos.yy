@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_placapontos",
-    "path":"sprites/spr_placapontos/spr_placapontos.yy",
+    "name":"spr_placa_1",
+    "path":"sprites/spr_placa_1/spr_placa_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

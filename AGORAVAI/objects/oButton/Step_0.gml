@@ -1,6 +1,7 @@
-if(place_meeting(x,y,o_PushBlocks) || place_meeting(x,y,camila_player))
+if(place_meeting(x,y,o_PushBlocks) || place_meeting(x,y,oParentPlayer))
 {
 	state = 1;
+	
 }
 else
 {

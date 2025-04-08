@@ -9,7 +9,10 @@
     "name":"Utilitarios",
     "path":"folders/Objects/Utilitarios.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_depth",
+    "path":"objects/obj_depth/obj_depth.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

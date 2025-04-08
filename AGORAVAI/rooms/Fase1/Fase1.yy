@@ -39,6 +39,7 @@
     {"name":"inst_478B2CC2","path":"rooms/Fase1/Fase1.yy",},
     {"name":"inst_416F5F74","path":"rooms/Fase1/Fase1.yy",},
     {"name":"inst_4D702231","path":"rooms/Fase1/Fase1.yy",},
+    {"name":"inst_2FF27AC2","path":"rooms/Fase1/Fase1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -85,6 +86,7 @@
             {"$GMRInstance":"v1","%Name":"inst_478B2CC2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_478B2CC2","objectId":{"name":"obj_placapontos","path":"objects/obj_placapontos/obj_placapontos.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":180.0,"y":583.0,},
             {"$GMRInstance":"v1","%Name":"inst_416F5F74","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_416F5F74","objectId":{"name":"obj_placapontos","path":"objects/obj_placapontos/obj_placapontos.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":180.0,"y":359.5,},
             {"$GMRInstance":"v1","%Name":"inst_4D702231","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4D702231","objectId":{"name":"obj_placapontos","path":"objects/obj_placapontos/obj_placapontos.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":180.0,"y":132.0,},
+            {"$GMRInstance":"v1","%Name":"inst_2FF27AC2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2FF27AC2","objectId":{"name":"carmen_player","path":"objects/carmen_player/carmen_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":266.0,"y":737.0,},
           ],"layers":[],"name":"Objects","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRAssetLayer":"","%Name":"Pisos","assets":[
             {"$GMRSpriteGraphic":"","%Name":"graphic_28EB0378","animationSpeed":1.0,"colour":4294967295,"frozen":true,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_28EB0378","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_piso_1","path":"sprites/spr_piso_1/spr_piso_1.yy",},"x":-17.0,"y":0.0,},
