@@ -32,5 +32,5 @@
     "path":"sprites/sPushBlocksArea/sPushBlocksArea.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

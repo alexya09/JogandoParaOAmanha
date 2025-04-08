@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_portafrente",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_portafrente",
   "overriddenProperties":[],
@@ -10,8 +12,8 @@
     "path":"folders/Objects/Fase1.yy",
   },
   "parentObjectId":{
-    "name":"obj_collider",
-    "path":"objects/obj_collider/obj_collider.yy",
+    "name":"obj_door",
+    "path":"objects/obj_door/obj_door.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -33,9 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPortal",
-    "path":"sprites/sPortal/sPortal.yy",
+    "name":"spr_portalcaixa",
+    "path":"sprites/spr_portalcaixa/spr_portalcaixa.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_portalcaixa",
+    "path":"sprites/spr_portalcaixa/spr_portalcaixa.yy",
+  },
   "visible":true,
 }
