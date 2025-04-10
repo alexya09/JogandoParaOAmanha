@@ -31,3 +31,8 @@ interactKey = noone;
 // Define estado da personagem
 
  state_char = PLAYER;
+ 
+ //   --                   INICIALIZAÇÃO TESTE DE DIALOGO          --
+ player_near = false;
+
+interaction_range = 10; 

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"ScpritEnumState",
+  "%Name":"scr_type",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ScpritEnumState",
+  "name":"scr_type",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Dialogo",
+    "path":"folders/Dialogo.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"Portafase2",
+  "%Name":"obj_demo",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":13,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Portafase2",
+  "name":"obj_demo",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fase0",
-    "path":"folders/Objects/Fase0.yy",
+    "name":"Dialogo",
+    "path":"folders/Dialogo.yy",
   },
-  "parentObjectId":{
-    "name":"obj_door",
-    "path":"objects/obj_door/obj_door.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_porta2",
-    "path":"sprites/spr_porta2/spr_porta2.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

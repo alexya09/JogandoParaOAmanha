@@ -1,11 +1,14 @@
 /// @description Inserir descrição aqui
+//TESTEDIALOGO
+
+
 if (state_char = PLAYER){
 	// Pegando a entrada do jogador
-	 up = keyboard_check(vk_up);
-	 down =  keyboard_check(vk_down);
-	 right =  keyboard_check(vk_right);
-	 left =  keyboard_check(vk_left);
-	 interactKey = keyboard_check_pressed(vk_space);
+	 up = keyboard_check(vk_up) || keyboard_check(ord("W"));
+	 down =  keyboard_check(vk_down) || keyboard_check(ord("S"));
+	 right =  keyboard_check(vk_right) || keyboard_check(ord("D"));
+	 left =  keyboard_check(vk_left) || keyboard_check(ord("A"));
+	
  
 	//Transformando em movimento
 	move_x = right - left;
@@ -112,7 +115,7 @@ if (state_char = PLAYER){
 	
 	
 else if (state_char == NPC) {
-    // Lógica de NPC 
+
 }
 
 //show_debug_message("My depth:camila " + string(-bbox_bottom));

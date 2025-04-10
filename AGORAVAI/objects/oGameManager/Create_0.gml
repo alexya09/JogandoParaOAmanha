@@ -1,3 +1,1 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-//global.dialogue = false;
+  global.interactKey = keyboard_check(vk_space) || keyboard_check(ord("E"));
