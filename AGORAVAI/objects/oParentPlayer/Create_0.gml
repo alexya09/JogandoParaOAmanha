@@ -27,6 +27,7 @@ movement = IDLE ;
 
 interactDist = 4;
 interactKey = noone;
+interactKeyPressed = noone;
 
 // Define estado da personagem
 

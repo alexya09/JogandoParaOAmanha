@@ -8,7 +8,7 @@ if (state_char = PLAYER){
 	 down =  keyboard_check(vk_down) || keyboard_check(ord("S"));
 	 right =  keyboard_check(vk_right) || keyboard_check(ord("D"));
 	 left =  keyboard_check(vk_left) || keyboard_check(ord("A"));
-	
+	 interactKeyPressed = keyboard_check_pressed(vk_space);
  
 	//Transformando em movimento
 	move_x = right - left;
@@ -86,8 +86,8 @@ if (state_char = PLAYER){
 	}
 
 	// caixa caixa
-
-	if(interactKey == true)
+	
+	if(interactKeyPressed)
 	{
 		var checkDir = face * 90;
 	
