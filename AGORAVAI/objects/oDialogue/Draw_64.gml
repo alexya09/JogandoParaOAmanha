@@ -44,7 +44,7 @@ if(inicializar == true)
 		//draw_rectangle_color(_xx+200,_yy,_guil,_guia,_c,_c,_c,_c,false);
 		
 		
-		draw_sprite_ext(DialogueBox_1,0,_xx+220,_yy,3,3,0,c_white,1);
+		draw_sprite_ext(MenuButton,0,_xx+220,_yy,3,3,0,c_white,1);
 		draw_sprite_ext(NameBox,0,_xx+300,565,3,3,0,c_white,1);
 		
 		var _stgw = string_width(textos_grid[#Infos.Nome, pagina]);

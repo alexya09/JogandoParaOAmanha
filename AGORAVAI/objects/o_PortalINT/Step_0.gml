@@ -5,11 +5,13 @@ if (box != noone && distance_to_object(box) <= 5)
 {
     if (box.tipoBloco == "inteiro")
     {
-        o_Points.pontuacao += 1;
+        obj_placapontos.pontuacao += 1;
         instance_deactivate_object(box);
     }
     else
     {
+		x = xstart;
+		y = ystart;
         show_debug_message("Tipo de bloco inválido para pontuação!");
     }
 }
