@@ -13,15 +13,25 @@ width = display_get_gui_width() - margin * 2;
 height = sprite_height;
 
 x = (display_get_gui_width() - width) / 2;
-y = display_get_gui_height() - height - 50;
+y = display_get_gui_height() - height - 20;
 
 // Text
 text_font = ft_dialogo;
 text_color = c_white;
 text_speed = 0.6;
-text_x = padding;
+text_x = padding /9;
 text_y = padding;
 text_width = width - padding * 2;
+
+//portrait
+portrait_x = padding;
+portrait_y = 40;
+
+//speaker
+speaker_x = padding;
+speaker_y = 3;
+speaker_font = ft_dialogo;
+speaker_color = c_white;
 
 /// Private properties
 /*** LOOK BUT DO NOT EDIT! ***/
@@ -31,6 +41,21 @@ current_action = -1;
 text = "";
 text_progress = 0;
 text_length = 0;
+
+portrait_sprite = -1;
+portrait_width = sprite_get_width(Portrait);
+portrait_height = sprite_get_height(Portrait);
+portrait_side = PORTRAIT_SIDE.PORTRAITLEFT;
+
+enum PORTRAIT_SIDE{
+	PORTRAITLEFT,
+	PORTRAITRIGHT
+}
+
+speaker_name = "";
+speaker_width = sprite_get_width(NameBox);
+speaker_height = sprite_get_height(NameBox);
+
 
 /// Methods
 /*** Generally you never need to call these manually ***/
