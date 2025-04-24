@@ -1,4 +1,4 @@
-
+/*
 if(inicializar == true)
 {
 	show_debug_message("entrou desenhar");
@@ -58,4 +58,4 @@ if(inicializar == true)
 }	
 	
 	
-	
+*/

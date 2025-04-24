@@ -75,7 +75,7 @@ if (state_char = PLAYER){
 	var vertical_movement = vel_y;
 
 	// DIALOGO
-
+/*
 	if (distance_to_object(oParentNPC) <= 10)
 	{
 		if(keyboard_check_pressed(ord("E"))){
@@ -83,7 +83,7 @@ if (state_char = PLAYER){
 			var _dialogo = instance_create_layer(x,y,"Dialogo",oDialogue);
 			_dialogo.npc_nome = _npc.nome;
 		}
-	}
+	}*/
 
 	// caixa caixa
 	

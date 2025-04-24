@@ -1,4 +1,4 @@
-show_debug_message("Valor de global.dialogue: " + string(global.dialogue));
+/*show_debug_message("Valor de global.dialogue: " + string(global.dialogue));
 
 if(inicializar == false)
 {
@@ -26,4 +26,4 @@ if(keyboard_check_pressed(ord("E"))) // and global.dialogue == true)
 		instance_deactivate_layer("Dialogo");
 		global.dialogue = false;
 	}
-}
+}*/

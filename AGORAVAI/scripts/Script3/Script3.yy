@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Script3",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Lixo",
+    "path":"folders/Lixo.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

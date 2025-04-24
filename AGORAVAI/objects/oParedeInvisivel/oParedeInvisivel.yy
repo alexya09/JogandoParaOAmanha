@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Sprite51",
-    "path":"sprites/Sprite51/Sprite51.yy",
+    "name":"sParede",
+    "path":"sprites/sParede/sParede.yy",
   },
   "spriteMaskId":null,
   "visible":true,

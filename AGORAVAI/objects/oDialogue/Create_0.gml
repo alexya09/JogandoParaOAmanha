@@ -1,4 +1,4 @@
-
+/*
 enum Infos{
 	Texto,
 	Retrato,
@@ -11,4 +11,4 @@ textos_grid = ds_grid_create(4,0);
 
 inicializar = false;
 pagina =0;
-global.dialogue = false;
+global.dialogue = false;*/
