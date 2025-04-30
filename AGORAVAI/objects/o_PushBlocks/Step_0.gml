@@ -16,7 +16,7 @@ depth = -bbox_bottom;
 	
 	//get ground type 
 	
-	if(place_meeting(x,y,oPushBlocksArea))
+	if(place_meeting(x,y,oPushBlockArea))
 	{
 		
 		pushBlockArea = true;
@@ -46,7 +46,7 @@ depth = -bbox_bottom;
 		xspd = lengthdir_x(finalSpd,realDir);
 		yspd = lengthdir_y(finalSpd,realDir);
 		
-		if ((pushBlockArea == true) && (!place_meeting(targetX, targetY,oPushBlocksArea)))
+		if ((pushBlockArea == true) && (!place_meeting(targetX, targetY,oPushBlocksAreaa)))
 		{
 			xspd = 0;
 			yspd = 0;

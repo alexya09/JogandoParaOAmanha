@@ -1,4 +1,4 @@
-var box = instance_nearest(x, y, o_PushBlocks);
+var box = instance_nearest(x, y, oBlocksINT);
 
 if (box != noone && distance_to_object(box) <= 5) {
     if (variable_instance_exists(box, "tipoBloco") && box.tipoBloco == "float") {
@@ -8,7 +8,7 @@ if (box != noone && distance_to_object(box) <= 5) {
             visible = false; // Pode deixar true se estiver testando
         }
 
-        obj_placapontos.pontuacao += 1;
+        obj_placapontos2.pontuacao += 1;
         instance_deactivate_object(box); // ou instance_destroy(box)
 
     } else {

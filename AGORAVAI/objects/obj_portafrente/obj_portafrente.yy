@@ -10,8 +10,8 @@
   "name":"obj_portafrente",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fase1",
-    "path":"folders/Objects/Fase1.yy",
+    "name":"Etapa1",
+    "path":"folders/Objects/Fase1/Etapa1.yy",
   },
   "parentObjectId":{
     "name":"obj_door",

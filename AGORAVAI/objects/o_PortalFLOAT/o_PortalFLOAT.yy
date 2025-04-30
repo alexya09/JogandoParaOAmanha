@@ -9,8 +9,8 @@
   "name":"o_PortalFLOAT",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fase1",
-    "path":"folders/Objects/Fase1.yy",
+    "name":"Etapa2",
+    "path":"folders/Objects/Fase1/Etapa2.yy",
   },
   "parentObjectId":{
     "name":"obj_collider",

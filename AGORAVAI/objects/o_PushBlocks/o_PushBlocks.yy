@@ -10,8 +10,8 @@
   "name":"o_PushBlocks",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fase1",
-    "path":"folders/Objects/Fase1.yy",
+    "name":"Utilitarios",
+    "path":"folders/Objects/Utilitarios.yy",
   },
   "parentObjectId":{
     "name":"obj_collider",

@@ -6,55 +6,63 @@ var draw_text_y = y;
 var draw_text_width = text_width;
 var finished = text_progress == text_length;
 
-//Portrait
-if(sprite_exists(portrait_sprite)) 
-{
-	//shrink text width by the width the portrait will take up
+// Portrait
+if (sprite_exists(portrait_sprite)) {
 	draw_text_width -= portrait_width + portrait_x + padding;
-	
+
 	var draw_portrait_x = x + portrait_x;
 	var draw_portrait_y = y + portrait_y;
 	var draw_portrait_xscale = 1;
-	
-	//what side is the portrait on
-	if(portrait_side == PORTRAIT_SIDE.PORTRAITLEFT)
-	{
-		//shift the text over when the portrait is on the left
+
+	if (portrait_side == PORTRAIT_SIDE.PORTRAITLEFT) {
+		// shift text to the right if portrait is on the left
 		draw_text_x += portrait_width + portrait_x + padding;
-	}
-	
-	else
-	{
-		//shift the portrait itself over when it is on the right 
-		draw_portrait_x = x + width - portrait_width - portrait_x;
-		draw_portrait_xscale = -1;
-	}
-	
-	//draw portrait backing
-	draw_sprite(Portrait,0,draw_portrait_x,draw_portrait_y);
-	
-	//animate the portrait when typing
-	var subimg = 0;
-	if(!finished)
-	{
-		subimg = (text_progress / text_speed) * (sprite_get_speed(portrait_sprite) / game_get_speed(gamespeed_fps)); }
-		
-		draw_sprite_ext(portrait_sprite,subimg,draw_portrait_x + portrait_width / 2, 
-		draw_portrait_y + portrait_height/ 2, draw_portrait_xscale,1,0,c_white,1);
+	} else {
+	draw_portrait_x = x + width - portrait_width - portrait_x;
+	draw_portrait_xscale = -1;
+
+	// Calcula nova largura do texto baseado na posição do portrait
+	draw_text_width = width - portrait_width - portrait_x - 2 * padding;
+
+	// Faz o texto começar antes do retrato (mais à direita)
+	draw_text_x = (x + width - portrait_width - portrait_x - draw_text_width - padding);
 }
-//speaker
-if(speaker_name != ""){
-	// expand the nameplate if the name is wider than default width
+
+
+	// draw portrait backing
+	draw_sprite(Portrait, 0, draw_portrait_x, draw_portrait_y);
+
+	// animate the portrait when typing
+	var subimg = 0;
+	if (!finished) {
+		subimg = (text_progress / text_speed) * (sprite_get_speed(portrait_sprite) / game_get_speed(gamespeed_fps));
+	}
+	draw_sprite_ext(portrait_sprite, subimg,
+		draw_portrait_x + portrait_width / 2,
+		draw_portrait_y + portrait_height / 2,
+		draw_portrait_xscale, 1, 0, c_white, 1);
+}
+
+// Speaker Name
+if (speaker_name != "") {
 	var name_padding = 20;
 	var name_w = max(string_width(speaker_name) + name_padding * 2, speaker_width);
-	
-	draw_sprite_stretched(NameBox, 0, x + speaker_x, y + speaker_y - speaker_height/2, name_w, speaker_height);
-	
+
+	// Default to left
+	var name_x = x + speaker_x;
+
+	// Align to right if portrait is on the right
+	if (portrait_side == PORTRAIT_SIDE.PORTRAITRIGHT) {
+		name_x = x + width - name_w - speaker_x;
+	}
+
+	draw_sprite_stretched(NameBox, 0, name_x, y + speaker_y - speaker_height / 2, name_w, speaker_height);
+
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
 	draw_set_font(speaker_font);
 	draw_set_color(speaker_color);
-	draw_text(x + speaker_x + name_w/2, y + speaker_y, speaker_name);
+	draw_text(name_x + name_w / 2, y + speaker_y, speaker_name);
 }
 
 // Text

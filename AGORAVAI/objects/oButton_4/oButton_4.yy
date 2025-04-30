@@ -1,13 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oPushBlocksArea",
-  "eventList":[],
+  "%Name":"oButton_4",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oPushBlocksArea",
+  "name":"oButton_4",
   "overriddenProperties":[],
   "parent":{
-    "name":"Utilitarios",
-    "path":"folders/Objects/Utilitarios.yy",
+    "name":"Etapa3",
+    "path":"folders/Objects/Fase1/Etapa3.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPushBlocksArea",
-    "path":"sprites/sPushBlocksArea/sPushBlocksArea.yy",
+    "name":"sButton_1",
+    "path":"sprites/sButton_1/sButton_1.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

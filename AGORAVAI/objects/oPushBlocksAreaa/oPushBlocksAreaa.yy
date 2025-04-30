@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Object36",
+  "%Name":"oPushBlocksAreaa",
   "eventList":[],
   "managed":true,
-  "name":"Object36",
+  "name":"oPushBlocksAreaa",
   "overriddenProperties":[],
   "parent":{
     "name":"Utilitarios",
     "path":"folders/Objects/Utilitarios.yy",
   },
-  "parentObjectId":{
-    "name":"oPushBlocksArea",
-    "path":"objects/oPushBlocksArea/oPushBlocksArea.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite49",
-    "path":"sprites/Sprite49/Sprite49.yy",
+    "name":"sPushBlocksArea",
+    "path":"sprites/sPushBlocksArea/sPushBlocksArea.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

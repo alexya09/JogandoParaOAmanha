@@ -9,10 +9,13 @@
   "name":"oParedeInvisivel",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fase1",
-    "path":"folders/Objects/Fase1.yy",
+    "name":"Etapa1",
+    "path":"folders/Objects/Fase1/Etapa1.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_collider",
+    "path":"objects/obj_collider/obj_collider.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

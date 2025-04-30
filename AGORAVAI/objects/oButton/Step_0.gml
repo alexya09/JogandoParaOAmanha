@@ -1,4 +1,4 @@
-if(place_meeting(x,y,o_PushBlocks) || place_meeting(x,y,oParentPlayer))
+if( place_meeting(x,y,oParentPlayer))
 {
 	state = 1;
 	
@@ -12,7 +12,7 @@ image_index = state;
 	
 if(state == 1)
 {
-	with (o_PushBlocks)
+	with (oBlocksINT)
 	{
 		// Resetar posição
 		x = xstart;
@@ -29,4 +29,9 @@ if(state == 1)
 		//if (variable_instance_exists(id, "startPointX")) startPointX = x;
 		//if (variable_instance_exists(id, "startPointY")) startPointY = y;
 	}
+}
+
+if(obj_placapontos.pontuacao == 3)
+{
+	instance_destroy();
 }

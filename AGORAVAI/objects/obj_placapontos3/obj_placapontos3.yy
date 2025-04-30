@@ -9,8 +9,8 @@
   "name":"obj_placapontos3",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fase1",
-    "path":"folders/Objects/Fase1.yy",
+    "name":"Etapa3",
+    "path":"folders/Objects/Fase1/Etapa3.yy",
   },
   "parentObjectId":null,
   "persistent":false,

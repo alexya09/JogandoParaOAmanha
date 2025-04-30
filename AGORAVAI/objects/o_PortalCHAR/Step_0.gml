@@ -1,8 +1,8 @@
-var box = instance_nearest(x, y, o_PushBlocks);
+var box = instance_nearest(x, y, oBlocksINT);
 
 if (box != noone && distance_to_object(box) <= 5) {
-    if (variable_instance_exists(box, "tipoBloco") && box.tipoBloco == "char") {
-        // Libera a barreira
+    if (variable_instance_exists(box, "tipoBloco") && box.tipoBloco == "char") 
+	{
         with (oParedeInvisivel) {
             solid = false;
             visible = false; // Pode deixar true se estiver testando

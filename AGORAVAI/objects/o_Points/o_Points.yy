@@ -9,8 +9,8 @@
   "name":"o_Points",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fase1",
-    "path":"folders/Objects/Fase1.yy",
+    "name":"Etapa1",
+    "path":"folders/Objects/Fase1/Etapa1.yy",
   },
   "parentObjectId":null,
   "persistent":false,

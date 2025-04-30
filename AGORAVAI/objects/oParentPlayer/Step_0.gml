@@ -94,7 +94,7 @@ if (state_char = PLAYER){
 		var checkX = x + lengthdir_x(interactDist,checkDir);
 		var checkY = y + lengthdir_y(interactDist,checkDir);
 	
-		var pushBlocksInst = instance_place(checkX,checkY,o_PushBlocks);
+		var pushBlocksInst = instance_place(checkX,checkY,oBlocksINT);
 	
 		if (instance_exists(pushBlocksInst) && pushBlocksInst.sliding == false)
 		{

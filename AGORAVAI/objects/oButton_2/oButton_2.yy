@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oBox1",
+  "%Name":"oButton_2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oParedeInvisivel","path":"objects/oParedeInvisivel/oParedeInvisivel.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oBox1",
+  "name":"oButton_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fase1",
-    "path":"folders/Objects/Fase1.yy",
+    "name":"Etapa2",
+    "path":"folders/Objects/Fase1/Etapa2.yy",
   },
-  "parentObjectId":{
-    "name":"o_PushBlocks",
-    "path":"objects/o_PushBlocks/o_PushBlocks.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPushBlocks",
-    "path":"sprites/sPushBlocks/sPushBlocks.yy",
+    "name":"sButton_1",
+    "path":"sprites/sButton_1/sButton_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
