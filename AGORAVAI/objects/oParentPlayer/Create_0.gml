@@ -36,4 +36,6 @@ interactKeyPressed = noone;
  //   --                   INICIALIZAÇÃO TESTE DE DIALOGO          --
  player_near = false;
 
-interaction_range = 10; 
+interaction_range = 10;
+
+canMove = true;

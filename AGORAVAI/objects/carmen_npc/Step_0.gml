@@ -18,6 +18,7 @@ balloon_y = pos_y;
 if (distance_to_object(oParentPlayer) <= 10)
 	{
 		if(keyboard_check_pressed(vk_enter)){
+			oParentPlayer.canMove = false;
 			startDialogue("Example");
 		}
 	}

@@ -1,6 +1,6 @@
 /// @description Inserir descrição aqui
 //TESTEDIALOGO
-
+if(canMove){
 
 if (state_char = PLAYER){
 	// Pegando a entrada do jogador
@@ -84,7 +84,7 @@ if (state_char = PLAYER){
 			_dialogo.npc_nome = _npc.nome;
 		}
 	}*/
-
+}
 	// caixa caixa
 	
 	if(interactKeyPressed)

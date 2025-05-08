@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_topics_1",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_topics_1",
+  "parent":{
+    "name":"Aula",
+    "path":"folders/Aula.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

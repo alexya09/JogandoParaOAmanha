@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_actions_1",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_actions_1",
+  "parent":{
+    "name":"Aula",
+    "path":"folders/Aula.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
