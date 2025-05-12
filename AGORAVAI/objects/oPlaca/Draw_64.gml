@@ -21,31 +21,4 @@ if (placa) {
     draw_set_font(ft_dialogo);
     draw_set_color(c_white);
 
-    // Define a área de recorte para o texto usando uma superfície
-    var texto_x = pos_x + 20;
-    var texto_y = pos_y + 20;
-    var texto_largura = largura_caixa - 40;
-    var texto_altura = altura_caixa - 40;
-
-    // Cria a superfície se necessário
-    if (!surface_exists(conteudo_surface)) {
-        conteudo_surface = surface_create(texto_largura, texto_altura);
-    }
-
-    // Renderiza o conteúdo na superfície
-    surface_set_target(conteudo_surface);
-    draw_clear_alpha(c_white, 0);
-    draw_text(0, -scroll_y, conteudo_texto);
-    surface_reset_target();
-
-    // Desenha a superfície na caixa de diálogo
-    draw_surface(conteudo_surface, texto_x, texto_y);
-
-    // Desenha a barra de rolagem
-    var barra_x = pos_x + largura_caixa - 20;
-    var barra_y = pos_y + 20;
-    draw_set_color(c_gray);
-    draw_rectangle(barra_x, barra_y, barra_x + 10, barra_y + altura_caixa - 40, false);
-    draw_set_color(c_white);
-    draw_rectangle(barra_x, barra_y + barra_pos_y, barra_x + 10, barra_y + barra_pos_y + barra_altura, false);
 }

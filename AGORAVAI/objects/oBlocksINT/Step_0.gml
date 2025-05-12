@@ -20,20 +20,20 @@ depth = -bbox_bottom;
 	{
 		
 		pushBlockArea = true;
-		show_debug_message("esta id o pushblockarea " + string(pushBlockArea));
-		show_debug_message("esstado sliding " + string(sliding));
+		//show_debug_message("esta id o pushblockarea " + string(pushBlockArea));
+		//show_debug_message("esstado sliding " + string(sliding));
 	}
 	
 	else
 	{
 		pushBlockArea = false;
-		show_debug_message("esta id o pushblockarea " + string(pushBlockArea));
+		//show_debug_message("esta id o pushblockarea " + string(pushBlockArea));
 	}
 	
 	if (sliding == true)
 	{
 		
-		show_debug_message("esstado sliding " + string(sliding));
+		//show_debug_message("esstado sliding " + string(sliding));
 		var realDir = faceDir * 90;
 		
 		var targetXDist = lengthdir_x(gridSpace,realDir);

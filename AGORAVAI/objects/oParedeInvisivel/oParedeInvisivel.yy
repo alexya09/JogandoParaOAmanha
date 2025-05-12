@@ -9,8 +9,8 @@
   "name":"oParedeInvisivel",
   "overriddenProperties":[],
   "parent":{
-    "name":"Etapa1",
-    "path":"folders/Objects/Fase1/Etapa1.yy",
+    "name":"Etapa2",
+    "path":"folders/Objects/Fase1/Etapa2.yy",
   },
   "parentObjectId":{
     "name":"obj_collider",
@@ -38,5 +38,5 @@
     "path":"sprites/sParede/sParede.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

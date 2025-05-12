@@ -1,46 +1,44 @@
-// Get input
-var confirm = keyboard_check_pressed(confirm_key);
+// STEP EVENT CORRIGIDO
 
-// Type out the text
-text_progress = min(text_progress + text_speed, text_length);
-
-// Ignore inputs when delay is active
+// Atualiza o delay de input
 if (input_delay > 0) {
-	input_delay--;
-	exit;
+    input_delay--;
+    exit;
 }
 
-// Are we finished typing? 
-/*
-if (text_progress == text_length) {
-	if (confirm) {
-		next();
-	}
-}
-else if (confirm) {
-	text_progress = text_length;
-} */
+// Verifica teclas
+var confirm = keyboard_check_pressed(confirm_key);
+var back = keyboard_check_pressed(vk_lcontrol);
 
-// 4) Se ainda não terminou de digitar, ENTER faz skip
+// Se o texto ainda está sendo digitado
 if (text_progress < text_length) {
     if (confirm) {
+        // Pula para o final do texto
         text_progress = text_length;
+        input_delay = max_input_delay;
+    } else {
+        // Continua digitando letra por letra
+        text_progress = min(text_progress + text_speed, text_length);
     }
     exit;
 }
 
-// 5) Texto já terminou (text_progress == text_length)
-
-// 5a) Se for a ÚLTIMA ação do diálogo, ENTER fecha tudo
-if (current_action == array_length(actions) - 1) {
-    if (confirm) {
-		oParentPlayer.canMove = true;
+// Se o texto terminou de ser exibido
+if (confirm) {
+    // Última fala: fecha o diálogo
+    if (current_action == array_length(actions) - 1) {
+        show_debug_message("TERMINOU TEXTO");
+        oParentPlayer.canMove = true;
+        oTeste.dialogue_active = false;
         instance_destroy();
+    } else {
+        // Avança para a próxima fala
+        next();
+        input_delay = max_input_delay;
     }
 }
-// 5b) Caso contrário, ENTER avança para a próxima fala
-else {
-    if (confirm) {
-        next();
-    }
+else if (back) {
+    // Volta para a fala anterior
+    previous();
+    input_delay = max_input_delay;
 }

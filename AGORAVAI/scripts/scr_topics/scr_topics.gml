@@ -7,8 +7,10 @@ global.topics[$ "Example"] = [
 	TEXT("Parece um bug...Esqueci a janela aberta!")
 ];
 
-global.topics[$ "teste"] = [
-	SPEAKER("Carmen",Sprite11, PORTRAIT_SIDE.PORTRAITLEFT),
-	TEXT("funcionou"),
-	TEXT("AAAAAAAAAAAAAAAAAAAAAAA")
+global.topics[$ "inicial"] = [
+	SPEAKER(" Camila ",PortraitCamila, PORTRAIT_SIDE.PORTRAITRIGHT),
+	TEXT("...onde estamos?"),
+	SPEAKER(" Carmen ",PortraitCarmen, PORTRAIT_SIDE.PORTRAITLEFT),
+	TEXT("Eu não sei..."),
+	TEXT("E se testarmos as portas? Talvez exista uma saída.")
 ];	

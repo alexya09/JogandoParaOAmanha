@@ -37,5 +37,5 @@
     "path":"sprites/sParede/sParede.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

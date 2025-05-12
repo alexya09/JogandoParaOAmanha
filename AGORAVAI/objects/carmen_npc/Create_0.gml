@@ -13,3 +13,5 @@ pos_y = carmen_npc.y;
 
 balloon_x = pos_x;
 balloon_y = pos_y;
+
+dialogoInicio = false;

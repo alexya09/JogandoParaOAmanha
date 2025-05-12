@@ -1,7 +1,7 @@
 // Estado inicial: ativa
 active = true;
 solid = true;
-visible = true;
+visible = false;
 
 depth = -bbox_bottom
 

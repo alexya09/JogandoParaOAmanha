@@ -19,6 +19,7 @@ if (distance_to_object(oParentPlayer) <= 10)
 	{
 		if(keyboard_check_pressed(vk_enter)){
 			oParentPlayer.canMove = false;
-			startDialogue("Example");
+			dialogoInicio = true;
+			startDialogue("inicial");
 		}
 	}

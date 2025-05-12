@@ -1,13 +1,13 @@
 
-function startDialogue(topic) {
-	if (instance_exists(obj_textbox))
+function startClass(topic) {
+	if (instance_exists(obj_textbox_1))
 		return;
 		
-	var inst = instance_create_depth(x, y, -999, obj_textbox);
+	var inst = instance_create_depth(x, y, -999, obj_textbox_1);
 	inst.setTopic(topic);
 }
 
-function type(x, y, text, progress, width) {
+function typee(x, y, text, progress, width) {
 	var draw_x = 0;
 	var draw_y = 0;
 	
