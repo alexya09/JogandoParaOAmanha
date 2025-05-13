@@ -1,3 +1,4 @@
+
 var largura_tela = display_get_gui_width();
 var altura_tela = display_get_gui_height();
 	

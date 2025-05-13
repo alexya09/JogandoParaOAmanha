@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Object65",
+  "%Name":"colliderFase1_",
   "eventList":[],
   "managed":true,
-  "name":"Object65",
+  "name":"colliderFase1_",
   "overriddenProperties":[],
   "parent":{
     "name":"Piso2",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_colisor_fase1_1",
-    "path":"sprites/spr_colisor_fase1_1/spr_colisor_fase1_1.yy",
+    "name":"spr_colisor_fase1_2",
+    "path":"sprites/spr_colisor_fase1_2/spr_colisor_fase1_2.yy",
   },
   "spriteMaskId":null,
   "visible":false,

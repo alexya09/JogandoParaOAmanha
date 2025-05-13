@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"Object66",
-  "eventList":[],
+  "%Name":"obj_portal_2",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Object66",
+  "name":"obj_portal_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Piso2",
-    "path":"folders/Sprites/Fase1/Piso2.yy",
+    "name":"Utilitarios",
+    "path":"folders/Objects/Utilitarios.yy",
   },
-  "parentObjectId":{
-    "name":"obj_collider",
-    "path":"objects/obj_collider/obj_collider.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_colisor_fase1_2",
-    "path":"sprites/spr_colisor_fase1_2/spr_colisor_fase1_2.yy",
+    "name":"spr_portal",
+    "path":"sprites/spr_portal/spr_portal.yy",
   },
   "spriteMaskId":null,
   "visible":false,

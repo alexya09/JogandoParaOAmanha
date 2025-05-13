@@ -13,3 +13,11 @@ text_speed = 0.6;
 text_x = padding /9;
 text_y = padding;
 text_width = width - padding * 2;
+
+comecou = false;
+
+if (global.tutorial_exibido) {
+    instance_destroy(); // se já foi exibido, destrói o objeto
+} else {
+    global.tutorial_exibido = true; // marca como exibido
+}
