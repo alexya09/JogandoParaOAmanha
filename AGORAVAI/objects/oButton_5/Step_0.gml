@@ -1,4 +1,4 @@
-if(place_meeting(x,y,oBlocksINT) || place_meeting(x,y,oParentPlayer))
+/*if(place_meeting(x,y,oBlocksINT) || place_meeting(x,y,oParentPlayer))
 {
 	state = 1;
 	
@@ -14,8 +14,8 @@ if(state == 1)
 {
 	if(obj_placapontos3.pontuacao >= 2)
 	{
-		instance_create_layer(185,236.5,"CAIXAA",oBlocksCHAR);
+		instance_create_layer(185,236.5,"CAIXAA",oBlocksCHAR_2);
 		instance_destroy();
 	}
 
-}
+}*/

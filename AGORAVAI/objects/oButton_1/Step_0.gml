@@ -1,3 +1,4 @@
+/*
 if(place_meeting(x,y,oBlocksINT) || place_meeting(x,y,oParentPlayer))
 {
 	state = 1;
@@ -18,4 +19,4 @@ if(state == 1)
 		instance_destroy();
 	}
 
-}
+} */

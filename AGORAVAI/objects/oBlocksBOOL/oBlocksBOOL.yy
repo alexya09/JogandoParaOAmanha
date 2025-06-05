@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPushBlocks",
-    "path":"sprites/sPushBlocks/sPushBlocks.yy",
+    "name":"sBOOLtrue",
+    "path":"sprites/sBOOLtrue/sBOOLtrue.yy",
   },
   "spriteMaskId":null,
   "visible":true,

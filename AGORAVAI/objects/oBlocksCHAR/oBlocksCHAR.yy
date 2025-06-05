@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPushBlocks",
-    "path":"sprites/sPushBlocks/sPushBlocks.yy",
+    "name":"sCHARb",
+    "path":"sprites/sCHARb/sCHARb.yy",
   },
   "spriteMaskId":null,
   "visible":true,

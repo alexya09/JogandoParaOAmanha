@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Fase2",
-    "path":"folders/Objects/Fase2.yy",
+    "path":"folders/Sprites/Fase2.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

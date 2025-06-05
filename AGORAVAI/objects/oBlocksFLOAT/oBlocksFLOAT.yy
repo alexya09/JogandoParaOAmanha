@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPushBlocks",
-    "path":"sprites/sPushBlocks/sPushBlocks.yy",
+    "name":"sFLOAT21",
+    "path":"sprites/sFLOAT21/sFLOAT21.yy",
   },
   "spriteMaskId":null,
   "visible":true,

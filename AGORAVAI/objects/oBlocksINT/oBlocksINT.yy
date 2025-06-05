@@ -42,8 +42,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"sPushBlocks",
-    "path":"sprites/sPushBlocks/sPushBlocks.yy",
+    "name":"sINT12",
+    "path":"sprites/sINT12/sINT12.yy",
   },
   "spriteMaskId":null,
   "visible":true,
