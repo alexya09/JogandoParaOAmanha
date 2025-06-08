@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_7EDC1A0A","path":"rooms/Fase1/Fase1.yy",},
-    {"name":"inst_A6246EC","path":"rooms/Fase1/Fase1.yy",},
     {"name":"inst_6976A6A5","path":"rooms/Fase1/Fase1.yy",},
     {"name":"inst_619BC1B9","path":"rooms/Fase1/Fase1.yy",},
     {"name":"inst_5E93D76D","path":"rooms/Fase1/Fase1.yy",},
@@ -66,19 +65,22 @@
     {"name":"inst_CFE1FE6","path":"rooms/Fase1/Fase1.yy",},
     {"name":"inst_2BBEDFEB","path":"rooms/Fase1/Fase1.yy",},
     {"name":"inst_68CB382F","path":"rooms/Fase1/Fase1.yy",},
-    {"name":"inst_5D7D59D4","path":"rooms/Fase1/Fase1.yy",},
     {"name":"inst_75ACFCC0","path":"rooms/Fase1/Fase1.yy",},
     {"name":"inst_4D86940D","path":"rooms/Fase1/Fase1.yy",},
+    {"name":"inst_521540BC","path":"rooms/Fase1/Fase1.yy",},
+    {"name":"inst_7679246A","path":"rooms/Fase1/Fase1.yy",},
+    {"name":"inst_4C3C990A","path":"rooms/Fase1/Fase1.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Players","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_7EDC1A0A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":true,"inheritedItemId":{"name":"inst_7EDC1A0A","path":"rooms/Fase0/Fase0.yy",},"inheritItemSettings":false,"isDnd":false,"name":"inst_7EDC1A0A","objectId":{"name":"oGameManager","path":"objects/oGameManager/oGameManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":109.0,"y":224.0,},
-        {"$GMRInstance":"v1","%Name":"inst_5D7D59D4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D7D59D4","objectId":{"name":"oTutorial","path":"objects/oTutorial/oTutorial.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":352.0,},
+        {"$GMRInstance":"v1","%Name":"inst_521540BC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_521540BC","objectId":{"name":"oTutorial_1","path":"objects/oTutorial_1/oTutorial_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":736.0,},
       ],"layers":[],"name":"Players","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Npcs","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_A6246EC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":true,"inheritedItemId":{"name":"inst_A6246EC","path":"rooms/Fase0/Fase0.yy",},"inheritItemSettings":false,"isDnd":false,"name":"inst_A6246EC","objectId":{"name":"carmen_npc","path":"objects/carmen_npc/carmen_npc.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":768.0,},
         {"$GMRInstance":"v1","%Name":"inst_6976A6A5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":true,"inheritedItemId":{"name":"inst_6976A6A5","path":"rooms/Fase0/Fase0.yy",},"inheritItemSettings":false,"isDnd":false,"name":"inst_6976A6A5","objectId":{"name":"oParentNPC","path":"objects/oParentNPC/oParentNPC.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":109.0,"y":224.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7679246A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7679246A","objectId":{"name":"carmen_npc_1","path":"objects/carmen_npc_1/carmen_npc_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":768.0,},
+        {"$GMRInstance":"v1","%Name":"inst_4C3C990A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4C3C990A","objectId":{"name":"carmen_npc","path":"objects/carmen_npc/carmen_npc.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":768.0,},
       ],"layers":[],"name":"Npcs","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Camera","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":true,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_619BC1B9","colour":4294967295,"frozen":true,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":true,"inheritedItemId":{"name":"inst_619BC1B9","path":"rooms/Fase0/Fase0.yy",},"inheritItemSettings":false,"isDnd":false,"name":"inst_619BC1B9","objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":224.0,},

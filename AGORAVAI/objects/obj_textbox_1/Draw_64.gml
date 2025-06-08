@@ -11,7 +11,7 @@ var largura_tela = display_get_gui_width();
 draw_sprite_stretched(sprite_index, 0, x, y, width, height);
 
 var draw_text_x = x;
-var draw_text_y = y;
+var draw_text_y = y+60;
 var draw_text_width = text_width;
 var finished = text_progress == text_length;
 

@@ -15,11 +15,21 @@ if (instance_exists(player)) {
 balloon_x = pos_x;
 balloon_y = pos_y;
 
-if (distance_to_object(oParentPlayer) <= 10)
-	{
-		if(keyboard_check_pressed(vk_enter)){
-			oParentPlayer.canMove = false;
-			dialogoInicio = true;
-			startDialogue("inicial");
-		}
-	}
+if (distance_to_object(oParentPlayer) <= 10) {
+    if (keyboard_check_pressed(vk_enter)) {
+        
+        // Verifica se a instância do jogador existe
+        if (instance_exists(oParentPlayer)) {
+            oParentPlayer.canMove = false;
+        }
+
+        dialogoInicio = true;
+
+        // Verifica se o nome da sala é "Fase1"
+        if (room_get_name(room) == "Fase1") {
+            startDialogue("dicas");
+        } else {
+            startDialogue("inicial");
+        }
+    }
+}

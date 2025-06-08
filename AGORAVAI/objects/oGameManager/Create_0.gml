@@ -5,3 +5,10 @@
   if (!variable_global_exists("tutorial_exibido")) {
     global.tutorial_exibido = false;
 }
+
+ if (!variable_global_exists("tutorial2_exibido")) {
+    global.tutorial2_exibido = false;
+}
+
+//global.dialogue_topic = topic; // armazena o tópico antes de criar
+

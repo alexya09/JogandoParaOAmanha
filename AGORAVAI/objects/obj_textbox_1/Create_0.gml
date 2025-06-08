@@ -2,7 +2,7 @@
 /// Customizable Properties
 
 // Input
-confirm_key = vk_lshift; // button to press to go to the next page
+confirm_key = ord("E");
 max_input_delay = 5; // how many frames to ignore input
 input_delay = max_input_delay;
 

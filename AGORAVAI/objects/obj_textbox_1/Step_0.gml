@@ -8,7 +8,7 @@ if (input_delay > 0) {
 
 // Verifica teclas
 var confirm = keyboard_check_pressed(confirm_key);
-var back = keyboard_check_pressed(vk_lcontrol);
+var back = keyboard_check_pressed(ord("Q"));
 
 // Se o texto ainda está sendo digitado
 if (text_progress < text_length) {

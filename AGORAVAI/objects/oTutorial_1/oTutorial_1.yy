@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"Portao",
+  "%Name":"oTutorial_1",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Portao",
+  "name":"oTutorial_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fase0",
-    "path":"folders/Objects/Fase0.yy",
+    "name":"Fase1",
+    "path":"folders/Objects/Fase1.yy",
   },
-  "parentObjectId":{
-    "name":"obj_collider",
-    "path":"objects/obj_collider/obj_collider.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_portao",
-    "path":"sprites/spr_portao/spr_portao.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

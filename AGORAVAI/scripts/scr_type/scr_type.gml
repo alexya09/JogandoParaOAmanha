@@ -2,10 +2,13 @@
 function startDialogue(topic) {
 	if (instance_exists(obj_textbox))
 		return;
-		
+
+	global.dialogue_topic = topic; 
+
 	var inst = instance_create_depth(x, y, -999, obj_textbox);
 	inst.setTopic(topic);
 }
+
 
 function type(x, y, text, progress, width) {
 	var draw_x = 0;
@@ -47,4 +50,13 @@ function type(x, y, text, progress, width) {
 			draw_x += string_width(char);
 		}
 	}
+}
+
+function endDialogue() {
+    // Verifica se o obj_textbox existe antes de tentar destruir
+    if (instance_exists(obj_textbox)) {
+        with (obj_textbox) {
+            instance_destroy();
+        }
+    }
 }

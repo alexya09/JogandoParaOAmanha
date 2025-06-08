@@ -85,3 +85,9 @@ setText = function(newText) {
 	text_length = string_length(newText);
 	text_progress = 0;
 }
+
+dialogue_topic = global.dialogue_topic;
+
+if (dialogue_topic == "porta") {
+    alarm[0] = room_speed * 2; // Exibe por 2 segundos
+}

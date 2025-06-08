@@ -7,7 +7,8 @@ if (!executando && botao_atual && !botao_anterior) {
     index_sequencia = 0;
     oConfirma.botao_pressionado = false;
 }
-botao_anterior = botao_atual;
+
+//botao_anterior = botao_atual;
 
 if (executando) {
 

@@ -14,3 +14,18 @@ global.topics[$ "inicial"] = [
 	TEXT("Eu não sei..."),
 	TEXT("E se testarmos as portas? Talvez exista uma saída.")
 ];	
+
+global.topics[$ "dicas"] = [
+	SPEAKER(" Carmen ",PortraitCarmen, PORTRAIT_SIDE.PORTRAITRIGHT),
+	TEXT("O que é essa sala?"),
+	SPEAKER(" Camila ",PortraitCamila, PORTRAIT_SIDE.PORTRAITLEFT),
+	TEXT("Eu não sei..."),
+	SPEAKER(" Carmen ",PortraitCarmen, PORTRAIT_SIDE.PORTRAITRIGHT),
+	TEXT("Olha, tem uma tela!"),
+	TEXT("Consegue ler?"),
+	SPEAKER(" Camila ",PortraitCamila, PORTRAIT_SIDE.PORTRAITLEFT),
+	TEXT("Posso tentar."),
+];	
+global.topics[$ "porta"] = [
+	TEXT("     Trancada...muito pesada pra tentar abrir...")
+];	
