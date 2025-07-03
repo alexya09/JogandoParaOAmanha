@@ -12,3 +12,4 @@
 
 //global.dialogue_topic = topic; // armazena o tópico antes de criar
 
+

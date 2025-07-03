@@ -11,6 +11,8 @@ botao_pressionado = true;
 for (var i = 0; i < 5; i++) {
     if (oMiniGame.sequencia[i] == "") {
         oMiniGame.sequencia[i] = "direita";
+		localadc=i;
+		adicionar_seta("direita", localadc);
         break;
     }
 }

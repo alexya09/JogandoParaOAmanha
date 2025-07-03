@@ -34,5 +34,5 @@
     "path":"sprites/sGameOver/sGameOver.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

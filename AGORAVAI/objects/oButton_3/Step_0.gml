@@ -1,21 +1,24 @@
-/*if(place_meeting(x,y,oBlocksINT) || place_meeting(x,y,oParentPlayer))
+if(ativa == 0)
 {
-	state = 1;
-	
-}
-else
-{
-	state = 0;
-}
-
-image_index = state;
-	
-if(state == 1)
-{
-	if(obj_placapontos2.pontuacao >= 2)
+	if (distance_to_object(oParentPlayer) <= 25) 
 	{
-		instance_create_layer(185,463,"CAIXAA",oBlocksBOOL);
-		instance_destroy();
+	    if (keyboard_check_pressed(vk_enter)) 
+		{
+				if (state == 0)          
+				{
+				    state       = 1;
+				    image_index = 1;     
+	
+ 
+				        if(obj_placapontos2.pontuacao >= 2)
+					{
+						instance_create_layer(185,463,"CAIXAA",oBlocksBOOL);
+						 state = 1;
+						image_index = 1;
+						ativa = 1;
+						//instance_destroy();
+					}
+				}
+		}
 	}
-
-}*/
+}

@@ -7,3 +7,4 @@ escala_texto_y = 1.3;
 acao();
 
 botao_pressionado = true;
+//oMiniGame.executando  = true;

@@ -29,3 +29,7 @@ global.topics[$ "dicas"] = [
 global.topics[$ "porta"] = [
 	TEXT("     Trancada...muito pesada pra tentar abrir...")
 ];	
+
+global.topics[$ "Primeiro CP"] = [
+	TEXT("     Você está indo bem! Continue até o próximo checkpoint!")
+];

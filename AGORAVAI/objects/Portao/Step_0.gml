@@ -1,4 +1,12 @@
 if (distance_to_object(camila_player) <= 4)
 {
-	startDialogue("porta");
+	if(!dialogo)
+	{
+		startDialogue("porta");
+		dialogo = true;
+	}
+}
+
+else{
+	dialogo = false;
 }

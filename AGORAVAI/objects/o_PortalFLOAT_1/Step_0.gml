@@ -1,23 +1,70 @@
-var box = instance_nearest(x, y, oBlocksINT);
+ if (!porta_travada) {
+    var bloco = instance_nearest(x, y, oBlocksINT);
+    var bloco_proximo = (bloco != noone && distance_to_object(bloco) <= 30 && variable_instance_exists(bloco, "tipoBloco") && bloco.tipoBloco == "float");
 
-if (box != noone && distance_to_object(box) <= 5) {
-    if (variable_instance_exists(box, "tipoBloco") && box.tipoBloco == "float") {
-        // Libera a barreira
-        with (oParedeInvisivel) {
-            solid = false;
-            visible = false; // Pode deixar true se estiver testando
+    if (bloco_proximo && !porta_fechando_apos_pontuar) {
+        porta_aberta = true;
+    } else {
+        porta_aberta = false;
+    }
+
+    if (porta_aberta) {
+        // ABRINDO A PORTA
+        image_speed = 0; 
+        if (image_index < 5) {
+            image_index += 0.2;
+        } else {
+            image_index = 5; 
+            
+            
+            if (distance_to_object(bloco) <= 5) {
+                obj_placapontos3.pontuacao += 1;
+                instance_deactivate_object(bloco);
+                porta_aberta = false;
+                porta_fechando_apos_pontuar = true;
+            }
         }
 
-        obj_placapontos3.pontuacao += 1;
-        instance_deactivate_object(box); // ou instance_destroy(box)
+        with (oParedeInvisivel) {
+            solid = false;
+            visible = false;
+        }
 
-    } else {
-        // Impede entrada
+    } else { 
+        
+        image_speed = 0; 
+
+        if (porta_fechando_apos_pontuar) {
+            // FECHANDO APÓS PONTUAR
+            if (image_index > 0) {
+                image_index -= 0.2;
+            } else {
+                image_index = 0;
+                porta_fechando_apos_pontuar = false;
+                porta_travada = true;
+            }
+        } else {
+            // FECHAMENTO NORMAL
+            if (image_index > 0) {
+                image_index -= 0.2;
+            } else {
+                image_index = 0; 
+            }
+        }
+
         with (oParedeInvisivel) {
             solid = true;
             visible = false;
         }
+    }
 
-        show_debug_message("Tipo de bloco inválido para pontuação!");
+} else {
+    // PORTA TRAVADA 
+    image_index = 0;
+    image_speed = 0; 
+    
+    with (oParedeInvisivel) {
+        solid = true;
+        visible = false;
     }
 }

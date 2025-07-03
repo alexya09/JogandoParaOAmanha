@@ -39,3 +39,15 @@ global.topicss[$"123"] = [
 global.topicss[$ "FIM"] = [
 	TEXT("PARABÉNS! \n Você completou a fase 1!")
 ];
+
+global.topicss[$"var"] = [
+    TEXT("Você já percebeu como, na vida, a gente guarda informações de jeitos diferentes?\nPor exemplo:\nSeu nome é uma palavra.\nSua idade é um número inteiro, como 12.\nSua altura pode ter vírgula, como 1.50 metros.\nE você pode dizer sim ou não para alguma coisa."),
+    TEXT("Quando programamos, ensinamos o computador a guardar e reconhecer essas informações também. Mas cuidado, o computador gosta de tudo bem organizado. Ele só aceita certos tipos de informação em certos lugares."),
+    TEXT("Números como 12, 8, 100, 1 são do tipo INT.\nNúmeros com vírgula, como 1.5 ou 3.14, vão no tipo FLOAT.\nRespostas de SIM/TRUE ou NÃO/FALSE vão no tipo BOOL.\nE uma letra só, como 'A' ou 'b', entra no tipo CHAR."),
+	TEXT("É como se cada tipo de informação tivesse sua própria portinha. E para passar por ela, a caixinha precisa estar com a etiqueta certa!")
+];
+
+
+global.topicss[$ "Primeiro CheckPoint"] = [
+	TEXT("Você está indo bem! Continue assim!")
+];

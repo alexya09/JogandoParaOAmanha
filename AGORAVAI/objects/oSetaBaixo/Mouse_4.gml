@@ -8,9 +8,13 @@ acao();
 
 botao_pressionado = true;
 
+
+
 for (var i = 0; i < 5; i++) {
     if (oMiniGame.sequencia[i] == "") {
         oMiniGame.sequencia[i] = "baixo";
+		localadc = i;
+		oMiniGame.adicionar_seta("baixo", localadc);
         break;
     }
 }

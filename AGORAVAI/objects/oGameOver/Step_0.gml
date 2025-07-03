@@ -1,25 +1,23 @@
-if(place_meeting(x,y,oMiniGame))
-{
-	for(var i = 0; i < 5; i++)
-	{
-		oMiniGame.sequencia [i] = "";
-	}
+if (place_meeting(x, y, oMiniGame)) {
+    show_message("MORREU");
 
-	show_message("MORREU");
-	//animaçao de morte ou queda
-	
-	oMiniGame.executando = false;
-	
-	//oMiniGame.sprite_index = spr_camila_idle_down;
+	/*oMiniGame.executando = false;
+	oMiniGame.index_sequencia = 0;
+	//oMiniGame.destino_x = x;
+	oMiniGame.destino_y = y;
 
-	oMiniGame.x = 93;
-	oMiniGame.y = 183;
+   
+    oMiniGame.x = 172;
+    oMiniGame.y = 250;
+    oMiniGame.sprite_index = spr_camila_idle_down;
+
+    
+    for (var i = 0; i < array_length(oMiniGame.sequencia); i++) {
+        oMiniGame.sequencia[i] = "";
+    }
+    
+	oMiniGame.setas_pressionadas = [];
+    exit; */
 	
-	oSetaCima.botao_pressionado = false;
-	oSetaBaixo.botao_pressionado = false;
-	oSetaDir.botao_pressionado = false;
-	oSetaEsq.botao_pressionado = false;
-	oSetaLoop.botao_pressionado = false;
-	oSetaRotacao.botao_pressionado = false;
-	
+	room_goto(GameOver);
 }

@@ -1,4 +1,5 @@
 show_debug_message(sequencia);
+show_debug_message(setas_pressionadas);
 
 var botao_atual = oConfirma.botao_pressionado;
 
@@ -8,35 +9,35 @@ if (!executando && botao_atual && !botao_anterior) {
     oConfirma.botao_pressionado = false;
 }
 
-//botao_anterior = botao_atual;
+botao_anterior = botao_atual;
 
 if (executando) {
 
     if (index_sequencia < array_length(oMiniGame.sequencia)) {
 
-        var direcao = oMiniGame.sequencia[index_sequencia];
+        var direcao = sequencia[index_sequencia];
 		
         if (x == destino_x && y == destino_y) {
             show_debug_message(direcao);
 
             switch (direcao) {
                 case "cima":
-                    destino_y    = y - 32;
+                    destino_y    = y - 20;
                     sprite_index = spr_camila_walk_up;
                     break;
 
                 case "baixo":
-                    destino_y    = y + 32;
+                    destino_y    = y + 20;
                     sprite_index = spr_camila_walk_down;
                     break;
 
                 case "esquerda":
-                    destino_x    = x - 32;
+                    destino_x    = x - 20;
                     sprite_index = spr_camila_walk_left;
                     break;
 
                 case "direita":
-                    destino_x    = x + 32;
+                    destino_x    = x + 20;
                     sprite_index = spr_camila_walk_right;
                     break;
                 
@@ -83,3 +84,9 @@ if (executando) {
         }
     }
 }
+
+	//if(place_meeting(x, y, obj_collider)) {
+	//	show_debug_message("COLIDINDO");
+    //}
+
+   

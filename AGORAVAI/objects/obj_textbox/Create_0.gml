@@ -88,6 +88,6 @@ setText = function(newText) {
 
 dialogue_topic = global.dialogue_topic;
 
-if (dialogue_topic == "porta") {
+if (dialogue_topic == "porta" || dialogue_topic == "Primeiro CP") {
     alarm[0] = room_speed * 2; // Exibe por 2 segundos
 }

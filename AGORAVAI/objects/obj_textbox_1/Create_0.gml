@@ -17,7 +17,7 @@ x = (display_get_gui_width() - width) / 2;
 y = display_get_gui_height() - height - 20;
 
 // Text
-text_font = ft_dialogo;
+text_font = Font7_1;
 text_color = c_white;
 text_speed = 0.6;
 text_x = padding *1.8;

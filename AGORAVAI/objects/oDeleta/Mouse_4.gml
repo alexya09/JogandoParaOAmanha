@@ -4,18 +4,17 @@ image_yscale = escala_y * 1.3;
 escala_texto_x = .3;
 escala_texto_y = 1.3;
 
-acao();
+botao_pressionado=true;
 
 for(var i = 0; i < 5; i++)
 {
 	oMiniGame.sequencia [i] = "";
+	
 }
+oMiniGame.setas_pressionadas = [];
+//oMiniGame.botao_anterior = false;
 
-oMiniGame.executando = false;
-
-oSetaCima.botao_pressionado = false;
-oSetaBaixo.botao_pressionado = false;
-oSetaDir.botao_pressionado = false;
-oSetaEsq.botao_pressionado = false;
-oSetaLoop.botao_pressionado = false;
-oSetaRotacao.botao_pressionado = false;
+//oMiniGame.executando = false;
+//	oMiniGame.index_sequencia = 0;
+//	oMiniGame.destino_x = x;
+//	oMiniGame.destino_y = y;

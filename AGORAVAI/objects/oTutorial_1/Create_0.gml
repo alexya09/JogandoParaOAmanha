@@ -7,7 +7,7 @@ x = (display_get_gui_width() - width) / 2;
 y = display_get_gui_height() - height - 20;
 
 // Text
-text_font = ft_MENU;
+text_font =Font7;
 text_color = c_white;
 text_speed = 0.6;
 text_x = padding /9;
@@ -21,3 +21,5 @@ if (global.tutorial2_exibido) {
 } else {
     global.tutorial2_exibido = true; // marca como exibido
 }
+
+camila_player.canMove = false;

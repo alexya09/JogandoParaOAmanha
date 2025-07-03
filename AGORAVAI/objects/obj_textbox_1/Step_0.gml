@@ -28,8 +28,9 @@ if (confirm) {
     // Última fala: fecha o diálogo
     if (current_action == array_length(actions) - 1) {
         show_debug_message("TERMINOU TEXTO");
-        oParentPlayer.canMove = true;
-        oTeste.dialogue_active = false;
+			if(instance_exists(oParentPlayer) && instance_exists(oTeste))
+			{oParentPlayer.canMove = true;
+			oTeste.dialogue_active = false;}
         instance_destroy();
     } else {
         // Avança para a próxima fala
