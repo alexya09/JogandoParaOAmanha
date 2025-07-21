@@ -9,7 +9,7 @@ draw_set_alpha(1);
 
 // Draw the box
 //draw_sprite_stretched(InfoBox, 0, x, y, width, height);
-draw_sprite(Tutorial,0,(display_get_gui_width() - width) / 2.5,display_get_gui_height() - 670);
+draw_sprite(spr_tutorial,0,(display_get_gui_width() - width) / 2.5,display_get_gui_height() - 670);
 /*
 var draw_text_x = x;
 var draw_text_y = y;
@@ -23,16 +23,18 @@ draw_set_valign(fa_top);
 draw_set_font(text_font);
 draw_set_color(text_color);
 
-draw_text(x + 230,y - 540,"Use as setas ou WASD"); 
-draw_text(x + 230 ,y - 510,"para se movimentar");
-draw_sprite(setas,0, x + 50, y - 600);
+draw_text(x + 280,y - 520,"Use as setas ou WASD"); 
+draw_text(x + 280 ,y - 490,"para se movimentar");
+draw_sprite(spr_setas_1,0, x + 50, y - 550);
 
-draw_sprite(teclas, 0, x + 50, y - 340);
-draw_text(x + 200,y - 255,"Use a tecla SPACE"); 
-draw_text(x + 200, y - 230,"para empurrar objetos");
+draw_sprite(spr_space, 0, x + 40, y - 270);
+draw_text(x + 200,y - 265,"Use a tecla SPACE"); 
+draw_text(x + 200, y - 240,"para empurrar objetos");
 
-draw_text(x + 200,y - 350,"Use a tecla ENTER");
-draw_text(x + 200,y - 320,"para iniciar dialogos");
+draw_sprite(spr_enter, 0, x + 50, y - 380);
+draw_text(x + 200,y - 380,"Use a tecla ENTER");
+draw_text(x + 200,y - 350,"para iniciar dialogos");
 
-draw_text(x + 200,y - 170,"Use a tecla SHIFT");
-draw_text(x + 200,y - 140,"para interagir com objetos");
+draw_sprite(spr_e, 0, x + 50, y - 180);
+draw_text(x + 200,y - 180,"Use a tecla E");
+draw_text(x + 200,y - 150,"para interagir com objetos");

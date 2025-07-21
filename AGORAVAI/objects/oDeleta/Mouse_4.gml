@@ -4,17 +4,16 @@ image_yscale = escala_y * 1.3;
 escala_texto_x = .3;
 escala_texto_y = 1.3;
 
-botao_pressionado=true;
+botao_pressionado = true;
 
-for(var i = 0; i < 5; i++)
-{
-	oMiniGame.sequencia [i] = "";
-	
-}
+// Zera a sequência corretamente
+oMiniGame.sequencia = [];  // cria um novo array vazio
 oMiniGame.setas_pressionadas = [];
-//oMiniGame.botao_anterior = false;
 
-//oMiniGame.executando = false;
-//	oMiniGame.index_sequencia = 0;
-//	oMiniGame.destino_x = x;
-//	oMiniGame.destino_y = y;
+// Reseta o estado da execução
+oMiniGame.executando = false;
+oMiniGame.index_sequencia = 0;
+oMiniGame.destino_x = oMiniGame.x;
+oMiniGame.destino_y = oMiniGame.y;
+
+show_debug_message("Sequência apagada!");

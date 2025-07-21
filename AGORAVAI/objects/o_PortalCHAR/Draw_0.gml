@@ -4,4 +4,4 @@ draw_set_color(c_white);
 
 var tipoPorta = "char";
 	
-draw_text_ext(x + 9, y + 1 ,tipoPorta,50,string_width(tipoPorta));
+draw_text_ext(x + 6, y -1 ,tipoPorta,50,string_width(tipoPorta));

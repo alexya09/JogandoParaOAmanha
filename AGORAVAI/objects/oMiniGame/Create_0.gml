@@ -1,4 +1,5 @@
-sequencia = array_create(5,"");
+sequencia = [];
+setas_pressionadas = [];
 
 index_sequencia = 0;
 executando = false;
@@ -8,7 +9,6 @@ destino_y = y;
 executando = false;
 botao_anterior = false;
 
-setas_pressionadas = [];
 
 function adicionar_seta(direcao, localadc) {
     var nova_seta = {
