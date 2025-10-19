@@ -27,6 +27,6 @@ switch (state) {
 
 var score_to_open = 4;
 
-if (state == STATE_OBJECTS.idle && obj_placapontos3.pontuacao >= score_to_open){
+if (state == STATE_OBJECTS.idle && global.pontuacao >= score_to_open){
     state = STATE_OBJECTS.opening;
 }

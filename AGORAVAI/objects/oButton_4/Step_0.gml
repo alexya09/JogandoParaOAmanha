@@ -10,16 +10,16 @@ if(ativa == 0)
 			    image_index = 1;
 				ativa = 1;
 
-			      if(obj_placapontos3.pontuacao = 1 && !instance_exists(oBlocksBOOL_1))
+			      if(global.pontuacao = 1 && !instance_exists(oBlocksBOOL_1))
 				{
 					instance_create_layer(185,236.5,"CAIXAA",oBlocksBOOL_1);
 					//instance_destroy();
 				}
-				  if(obj_placapontos3.pontuacao = 3 && !instance_exists(oBlocksFLOAT))
+				  if(global.pontuacao = 3 && !instance_exists(oBlocksFLOAT))
 				{
 					instance_create_layer(185,236.5,"CAIXAA",oBlocksFLOAT);
 				}
-					if(obj_placapontos3.pontuacao = 2 && !instance_exists(oBlocksCHAR_2))
+					if(global.pontuacao = 2 && !instance_exists(oBlocksCHAR_2))
 				{
 					instance_create_layer(185,236.5,"CAIXAA",oBlocksCHAR_2);
 				}

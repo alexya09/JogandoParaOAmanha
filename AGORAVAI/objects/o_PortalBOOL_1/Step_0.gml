@@ -18,7 +18,7 @@
             
             
             if (distance_to_object(bloco) <= 5) {
-                obj_placapontos3.pontuacao += 1;
+                global.pontuacao += 1;
                 instance_deactivate_object(bloco);
                 porta_aberta = false;
                 porta_fechando_apos_pontuar = true;

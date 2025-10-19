@@ -9,7 +9,7 @@ draw_set_alpha(1);
 
 // Draw the box
 //draw_sprite_stretched(InfoBox, 0, x, y, width, height);
-draw_sprite(Tutorial,0,(display_get_gui_width() - width) / 2.5,display_get_gui_height() - 670);
+draw_sprite(spr_tutorial,0,(display_get_gui_width() - width) / 2.5,display_get_gui_height() - 670);
 /*
 var draw_text_x = x;
 var draw_text_y = y;

@@ -34,10 +34,14 @@ if (text_progress < text_length) {
 // 5a) Se for a ÚLTIMA ação do diálogo, ENTER fecha tudo
 if (current_action == array_length(actions) - 1) {
     if (confirm) {
-		oParentPlayer.canMove = true;
+        if (instance_exists(oParentPlayer)) {
+    oParentPlayer.canMove = true;
+}
+        if (instance_exists(oTutorialSeta)) instance_destroy(oTutorialSeta);
         instance_destroy();
     }
 }
+
 // 5b) Caso contrário, ENTER avança para a próxima fala
 else {
     if (confirm) {

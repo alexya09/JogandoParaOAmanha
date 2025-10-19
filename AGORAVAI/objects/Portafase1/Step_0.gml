@@ -26,6 +26,6 @@ switch (state) {
 }
 
 
-if (state == STATE_OBJECTS.idle && carmen_npc.dialogoInicio == true && distance_to_object(oParentPlayer) <= 10 ){
+if (state == STATE_OBJECTS.idle && global.dialogoInicio == true && distance_to_object(oParentPlayer) <= 10 ){
     state = STATE_OBJECTS.opening;
 }

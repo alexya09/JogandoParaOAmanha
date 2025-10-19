@@ -12,4 +12,9 @@
 
 //global.dialogue_topic = topic; // armazena o tópico antes de criar
 
+liberafase2 = false;
+global.dialogoInicio = false;
 
+global.pontuacao = 0;
+
+global.liberafase3 = false;

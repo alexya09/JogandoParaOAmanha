@@ -18,5 +18,5 @@ var y_texto = y - texto_altura / 2;
 draw_text_ext(x + 15, y + 1 ,ptc,50,string_width(ptc));
 draw_text_ext(x + 6, y + 1 ,pontuacao,50,string_width(pontuacao));
 
-draw_text_ext(0,0,camila_player.state_char,0,string_width(ptc));
-draw_text_ext(90,0,pontuacao,50,string_width(ptc));
+//draw_text_ext(0,0,camila_player.state_char,0,string_width(ptc));
+//draw_text_ext(90,0,pontuacao,50,string_width(ptc));

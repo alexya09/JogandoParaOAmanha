@@ -23,7 +23,7 @@ if (distance_to_object(oParentPlayer) <= 10) {
             oParentPlayer.canMove = false;
         }
 
-        dialogoInicio = true;
+        global.dialogoInicio = true;
 
         // Verifica se o nome da sala é "Fase1"
         if (room_get_name(room) == "Fase1") {

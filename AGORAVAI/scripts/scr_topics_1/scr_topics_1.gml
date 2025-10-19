@@ -51,3 +51,54 @@ global.topicss[$"var"] = [
 global.topicss[$ "Primeiro CheckPoint"] = [
 	TEXT("Você está indo bem! Continue assim!")
 ];
+
+global.topicss[$ "bateu"] = [
+	TEXT("Ops! Que tal tentarmos de novo?")
+];
+
+global.topicss[$"algoritmos"] = [
+	TEXT("Oi! Que bom te ver por aqui! Agora a gente vai falar sobre algo muito importante na programação: os algoritmos! Para navegar pela aula, use a tecla E para avançar e a tecla Q para voltar."),
+
+	TEXT("Introdução aos Algoritmos\n\nUm algoritmo é como uma receita de bolo: uma sequência de passos que você segue para chegar a um resultado."),
+
+	TEXT("Na programação, um algoritmo é o conjunto de instruções que diz ao computador exatamente o que fazer e em qual ordem fazer."),
+
+	TEXT("Por exemplo, para atravessar um labirinto, você pode criar um algoritmo assim:\n1. Andar para frente\n2. Virar à direita\n3. Andar para frente\n4. Virar à esquerda\n5. Chegar à saída!"),
+
+	TEXT("Na sua aventura, você vai ter várias setas que representam ações como 'andar', 'virar para a esquerda' e 'virar para a direita'. Seu desafio é escolher 5 delas e colocar na ordem certa."),
+
+	TEXT("Se a sequência estiver correta, nossa personagem vai conseguir escapar do labirinto! Mas se estiver errada, ela vai acabar no caminho errado e teremos que tentar de novo."),
+
+	TEXT("Pense bem: qual é o passo que vem primeiro? Qual é o último? E o que vem no meio? É assim que um programador pensa quando cria um algoritmo."),
+
+
+	//TEXT("Monte a sequência de setas e descubra o caminho certo para a saída. Testar e ajustar faz parte do processo"),
+
+	//TEXT("Lembre-se dos controles:\n- Use o mouse para clicar nas setas para os espaços da sequência\n- Clique no botão com VERIFICA para testar\n- Clique no botão com X para limpar e tentar de novo"),
+
+	//TEXT("Divirta-se e boa sorte no desafio!")
+];
+
+global.topicss[$ "tutorial"] = [
+	TEXT("     Essas são as opções de movimentação para chegar até o final!"),
+	TEXT("     Clique nas setas para adiciona-las ao caminho da Camila. Você pode adicionar até 5 comandos por vez."),
+	TEXT("     Após executar os comandos aperte no X para limpar as opções. Repita até chegar ao final.")
+];
+
+global.topicss[$"turingTumble"] = [
+    TEXT("Você já pensou como um computador consegue organizar tudo o que faz?"),
+    TEXT("Assim como uma bolinha precisa de rampas para chegar ao destino, o computador precisa de instruções bem claras para não se perder."),
+    TEXT("As rampas funcionam como caminhos: elas guiam a informação passo a passo até o resultado final."),
+    TEXT("É como se cada rampa fosse uma instrução, e a bolinha fosse o dado correndo pelo sistema."),
+    TEXT("Agora é a sua vez! Imagine que a bolinha é um dado importante que precisa chegar até o final sem cair livremente."),
+    TEXT("Para isso, você vai usar rampas. Elas são as estradas que orientam a bolinha e mantêm o percurso organizado."),
+    TEXT("Clique nos lugares onde você quer colocar as rampas. Mas atenção: você só pode usar no máximo 10 rampas."),
+    TEXT("Quando terminar de posicionar, aperte o botão CONFIRMAR e veja a bolinha descer pelo caminho que você construiu!")
+];
+
+
+global.topicss[$"erro"] = [
+    TEXT("Ops! A bolinha caiu livremente e não conseguiu chegar ao final?"),
+    TEXT("Tente revisar as rampas: será que elas estão guiando a bolinha direitinho até o destino?"),
+    TEXT("Lembre-se: você tem no máximo 10 rampas para usar. Ajuste o caminho e aperte CONFIRMAR de novo!")
+];

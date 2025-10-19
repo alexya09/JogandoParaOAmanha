@@ -42,28 +42,30 @@ if (sprite_exists(portrait_sprite)) {
 		draw_portrait_y + portrait_height / 2,
 		draw_portrait_xscale, 1, 0, c_white, 1);
 }
-
-// Speaker Name
+// speaker
 if (speaker_name != "") {
-	var name_padding = 20;
-	var name_w = max(string_width(speaker_name) + name_padding * 2, speaker_width);
+    var name_padding = 20;
+    var name_text_w = string_width(speaker_name);
+    var min_w = 100; // largura mínima para a caixa
+    var max_w = width - 2 * name_padding; // largura máxima para não sair da caixa
 
-	// Default to left
-	var name_x = x + speaker_x;
+    var name_w = clamp(name_text_w + name_padding * 2, min_w, max_w);
 
-	// Align to right if portrait is on the right
-	if (portrait_side == PORTRAIT_SIDE.PORTRAITRIGHT) {
-		name_x = x + width - name_w - speaker_x;
-	}
+    var name_x = x + speaker_x;
 
-	draw_sprite_stretched(NameBox, 0, name_x, y + speaker_y - speaker_height / 2, name_w, speaker_height);
+    if (portrait_side == PORTRAIT_SIDE.PORTRAITRIGHT) {
+        name_x = x + width - name_w - speaker_x;
+    }
 
-	draw_set_halign(fa_center);
-	draw_set_valign(fa_center);
-	draw_set_font(speaker_font);
-	draw_set_color(speaker_color);
-	draw_text(name_x + name_w / 2, y + speaker_y, speaker_name);
+    draw_sprite_stretched(NameBox, 0, name_x, y + speaker_y - speaker_height / 2, name_w, speaker_height);
+
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_center);
+    draw_set_font(speaker_font);
+    draw_set_color(speaker_color);
+    draw_text(name_x + name_w / 2, y + speaker_y, speaker_name);
 }
+
 
 // Text
 draw_set_halign(fa_left);

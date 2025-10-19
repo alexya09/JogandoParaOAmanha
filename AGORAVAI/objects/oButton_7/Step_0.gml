@@ -10,7 +10,7 @@ if(ativa == 0)
 			    image_index = 1;
 				ativa = 1;
 
-			      if(obj_placapontos3.pontuacao = 3)
+			      if(global.pontuacao = 3)
 				{
 					instance_create_layer(185,236.5,"CAIXAA",oBlocksFLOAT);
 					instance_destroy();

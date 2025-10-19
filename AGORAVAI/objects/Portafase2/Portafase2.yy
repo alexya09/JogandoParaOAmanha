@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_porta2",
-    "path":"sprites/spr_porta2/spr_porta2.yy",
+    "name":"spr_porta1",
+    "path":"sprites/spr_porta1/spr_porta1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
