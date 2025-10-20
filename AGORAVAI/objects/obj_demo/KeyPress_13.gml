@@ -1,2 +1,1 @@
-//startDialogue("Example");
-// TENTEI DELETAR E DEU UMA MENSAGEM QUE NAO ENTENDI ENTAO DEIXA AQ KK
+startDialogue("Breakfast");

@@ -24,15 +24,15 @@
   "name":"DialogueBox",
   "nineSlice":{
     "$GMNineSliceData":"",
-    "bottom":61,
+    "bottom":48,
     "enabled":true,
     "guideColour":[4294902015,4294902015,4294902015,4294902015,],
     "highlightColour":1728023040,
     "highlightStyle":0,
-    "left":80,
+    "left":81,
     "resourceType":"GMNineSliceData",
     "resourceVersion":"2.0",
-    "right":112,
+    "right":108,
     "tileMode":[
       1,
       1,
@@ -40,7 +40,7 @@
       1,
       1,
     ],
-    "top":103,
+    "top":38,
   },
   "origin":0,
   "parent":{
