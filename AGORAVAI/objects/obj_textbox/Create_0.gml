@@ -5,8 +5,8 @@
 confirm_key = vk_enter; // button to press to go to the next page
 max_input_delay = 5; // how many frames to ignore input
 input_delay = max_input_delay;
-up_key = vk_space;
-down_key = vk_backspace;
+up_key = vk_up;
+down_key = vk_down;
 
 // Position
 margin = 200; // how much space the textbox gets from the edges of the screen
@@ -23,7 +23,7 @@ text_color = c_white;
 text_speed = 0.6;
 text_x = padding /9;
 text_y = padding;
-text_width = width - padding * 2;
+text_width = width - padding * 1.5;
 
 //portrait
 portrait_x = padding;

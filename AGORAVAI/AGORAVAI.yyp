@@ -366,6 +366,7 @@
     {"id":{"name":"sDeleta","path":"sprites/sDeleta/sDeleta.yy",},},
     {"id":{"name":"sDestaquePiso","path":"sprites/sDestaquePiso/sDestaquePiso.yy",},},
     {"id":{"name":"setas","path":"sprites/setas/setas.yy",},},
+    {"id":{"name":"setinha","path":"sprites/setinha/setinha.yy",},},
     {"id":{"name":"sFLOAT21","path":"sprites/sFLOAT21/sFLOAT21.yy",},},
     {"id":{"name":"sFundoMesa","path":"sprites/sFundoMesa/sFundoMesa.yy",},},
     {"id":{"name":"sGameOver","path":"sprites/sGameOver/sGameOver.yy",},},
@@ -468,9 +469,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Fase3","path":"rooms/Fase3/Fase3.yy",},},
     {"roomId":{"name":"Fase4","path":"rooms/Fase4/Fase4.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
-    {"roomId":{"name":"Fase3","path":"rooms/Fase3/Fase3.yy",},},
     {"roomId":{"name":"Fase0","path":"rooms/Fase0/Fase0.yy",},},
     {"roomId":{"name":"Fase2","path":"rooms/Fase2/Fase2.yy",},},
     {"roomId":{"name":"Fase1","path":"rooms/Fase1/Fase1.yy",},},

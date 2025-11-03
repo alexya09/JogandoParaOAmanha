@@ -88,7 +88,7 @@ if(finished && option_count > 0)
 		if(i == current_option)
 		{
 			opt_x += option_selection_indent;
-			draw_sprite(arrow12,0,opt_x, opt_y);
+			draw_sprite(setinha,0,opt_x - 40, opt_y - 20 );
 			
 		}
 		draw_sprite_stretched(NameBox,0,opt_x, opt_y - option_height/2, option_width, option_height);
