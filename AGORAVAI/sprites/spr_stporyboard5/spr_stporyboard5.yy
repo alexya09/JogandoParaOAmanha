@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_stporyboard5",
   "bboxMode":0,
-  "bbox_bottom":1199,
+  "bbox_bottom":499,
   "bbox_left":0,
-  "bbox_right":1919,
+  "bbox_right":799,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":1200,
+  "height":500,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"73c5d7d0-ceb7-4d42-ab22-7671be25674c","blendMode":0,"displayName":"default","isLocked":false,"name":"73c5d7d0-ceb7-4d42-ab22-7671be25674c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":1920,
+  "width":800,
 }

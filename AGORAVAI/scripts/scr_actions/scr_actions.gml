@@ -4,6 +4,9 @@
 #macro CHOICE new ChoiceAction
 #macro OPTION new OptionAction
 #macro GOTO new GotoAction
+#macro SET_UI new SetUIAction
+#macro IMAGE new ImageAction
+#macro IMAGE_FADE_OUT new ImageFadeOutAction
 
 function DialogueAction() constructor {
 	act = function() { };
@@ -102,3 +105,70 @@ function GotoAction(_topic): DialogueAction() constructor {
 	}
 }
 
+function ImageAction(_sprite, _x = undefined, _y = undefined, _alpha = 1) : DialogueAction() constructor {
+	// Variáveis salvas do construtor
+	sprite = _sprite;
+	img_x = _x;
+	img_y = _y;
+	img_alpha = _alpha; // O alfa é salvo aqui
+
+	act = function(textbox) {
+		// Para qualquer fade em andamento (da melhoria opcional)
+		textbox.is_fading_image = false; 
+
+		if (sprite == noone) {
+			textbox.show_image = false;
+			textbox.current_image_sprite = noone;
+			textbox.current_image_alpha = 0;
+		} else {
+			textbox.show_image = true;
+			textbox.current_image_sprite = sprite;
+
+			// Define X
+			if (is_undefined(img_x)) {
+				textbox.current_image_x = textbox.x + textbox.width / 2 - sprite_get_width(sprite) / 2;
+			} else {
+				textbox.current_image_x = img_x;
+			}
+
+			// Define Y
+			if (is_undefined(img_y)) {
+				textbox.current_image_y = textbox.y + textbox.height / 2 - sprite_get_height(sprite) / 2;
+			} else {
+				textbox.current_image_y = img_y;
+			}
+			
+			// Define o Alfa (Linha corrigida)
+			textbox.current_image_alpha = img_alpha; // <-- Corrigido
+		}
+		
+		textbox.next();
+	}
+}
+
+function SetUIAction(_show_box, _show_speaker) : DialogueAction() constructor {
+	show_box = _show_box;         
+	show_speaker = _show_speaker; 
+
+	act = function(textbox) {
+		textbox.draw_box = show_box;
+		textbox.draw_speaker_name = show_speaker;
+		
+		textbox.next();
+	}
+}
+
+function ImageFadeOutAction(_speed = 0.05) : DialogueAction() constructor {
+	
+	speed = _speed; 
+
+	act = function(textbox) {
+		
+		if (textbox.show_image) {
+			textbox.is_fading_image = true;
+			textbox.image_fade_speed = speed;
+		}
+	
+		textbox.next();
+	}
+}

@@ -1,1 +1,1 @@
-startDialogue("Breakfast");
+startDialogue("minha_cena_com_imagem");

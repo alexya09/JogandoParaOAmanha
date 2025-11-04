@@ -21,9 +21,9 @@ y = display_get_gui_height() - height - 20;
 text_font = ft_dialogo;
 text_color = c_white;
 text_speed = 0.6;
-text_x = padding /9;
+text_x = padding ;
 text_y = padding;
-text_width = width - padding * 1.5;
+text_width = width - padding * 2.5;
 
 //portrait
 portrait_x = padding;
@@ -34,6 +34,7 @@ speaker_x = padding;
 speaker_y = 3;
 speaker_font = ft_dialogo;
 speaker_color = c_white;
+draw_speaker_name = true;
 //options
 
 option_x = padding * 3.4;
@@ -71,7 +72,16 @@ speaker_height = sprite_get_height(NameBox);
 options = [];
 current_option = 0;
 option_count = 0;
+draw_box = true;
 
+//image
+show_image = false;
+current_image_sprite = noone;
+current_image_x = 0;
+current_image_y = 0;
+current_image_alpha = 1;
+is_fading_image = false; 
+image_fade_speed = 0.05; 
 
 /// Methods
 /*** Generally you never need to call these manually ***/

@@ -4,6 +4,19 @@ var confirm = keyboard_check_pressed(confirm_key);
 // Type out the text
 text_progress = min(text_progress + text_speed, text_length);
 
+if (is_fading_image) {
+	// Diminui o alfa (opacidade)
+	current_image_alpha -= image_fade_speed;
+	current_image_alpha = max(0, current_image_alpha); // Garante que não fique negativo
+	
+	// Quando o fade terminar (alfa chegou a 0)
+	if (current_image_alpha == 0) {
+		is_fading_image = false;    // Para de fazer o fade
+		show_image = false;         // Para de desenhar a imagem
+		current_image_sprite = noone; // Limpa o sprite
+	}
+}
+
 // Ignore inputs when delay is active
 if (input_delay > 0) {
 	input_delay--;
