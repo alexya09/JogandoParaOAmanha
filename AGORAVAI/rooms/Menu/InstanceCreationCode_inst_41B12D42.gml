@@ -1,4 +1,4 @@
 acao = function()
 {
-	room_goto(Fase0);
+	room_goto(Intro);
 }

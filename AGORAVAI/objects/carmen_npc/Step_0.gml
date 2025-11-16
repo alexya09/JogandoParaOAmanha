@@ -23,13 +23,31 @@ if (distance_to_object(oParentPlayer) <= 10) {
             oParentPlayer.canMove = false;
         }
 
-        global.dialogoInicio = true;
+       
 
         // Verifica se o nome da sala é "Fase1"
         if (room_get_name(room) == "Fase1") {
             startDialogue("dicas");
-        } else {
-            startDialogue("inicial");
+			oParentPlayer.canMove = true;
+        } 
+		else if(global.liberafase3 = true)
+		{
+			startDialogue("fase2e3");
+			oParentPlayer.canMove = true;
+		}
+		else if(oGameManager.liberafase2 = true)
+		{
+			startDialogue("fase1e2");
+			oParentPlayer.canMove = true;
+		}
+		else if (room_get_name(room) == "Fase0"){
+            startDialogue("interacao_carmen");
+			oParentPlayer.canMove = true;
         }
+		
+		else{
+			
+		}
+		 
     }
 }

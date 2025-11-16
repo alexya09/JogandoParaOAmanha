@@ -1,4 +1,4 @@
-if (place_meeting(x,y,camila_player)){
+if (place_meeting(x,y,camila_player) && (global.liberafase3 = true)){
 	
 	room_goto(Fase3);
 	//camila_player.x = target_x;

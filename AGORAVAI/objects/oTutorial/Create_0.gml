@@ -21,3 +21,5 @@ if (global.tutorial_exibido) {
 } else {
     global.tutorial_exibido = true; // marca como exibido
 }
+
+oParentPlayer.canMove = false;

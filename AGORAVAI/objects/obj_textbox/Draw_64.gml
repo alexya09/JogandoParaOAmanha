@@ -22,7 +22,7 @@ if (sprite_exists(portrait_sprite)) {
 
 	if (portrait_side == PORTRAIT_SIDE.PORTRAITLEFT) {
 		// shift text to the right if portrait is on the left
-		draw_text_x += portrait_width + portrait_x + padding;
+		draw_text_x += portrait_width + portrait_x * 0.5;
 	} else {
 	draw_portrait_x = x + width - portrait_width - portrait_x;
 	draw_portrait_xscale = -1;
@@ -60,7 +60,7 @@ if (speaker_name != "" && draw_speaker_name) {
     var name_x = x + speaker_x;
 
 	// A linha abaixo foi comentada para não desenhar a caixa de nome
-    // draw_sprite_stretched(NameBox, 0, name_x, y + speaker_y - speaker_height / 2, name_w, speaker_height);
+     draw_sprite_stretched(NameBox, 0, name_x, y + speaker_y - speaker_height / 2, name_w, speaker_height);
 
     draw_set_halign(fa_center);
     draw_set_valign(fa_center);

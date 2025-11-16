@@ -22,7 +22,33 @@ if (global.pontuacao == 4) {
     liberafase2 = true;
 }
 
-show_debug_message(global.pontuacao);
-show_debug_message(liberafase2);
+//show_debug_message(global.pontuacao);
+//show_debug_message(liberafase2);
 
+if (global.vilao_derrotado)
+{
+    show_debug_message("VILAO DERROTADO → spawnando Boss2");
+
+    global.vilao_derrotado = false; // evita executar de novo
+
+    instance_create_layer(211, 32, "Players", Boss2);
+
+    if (instance_exists(Boss)) {
+        with (Boss) instance_destroy();
+    }
+
+    delay_final = room_speed * 1; 
+}
+
+
+
+if (delay_final > 0)
+{
+    delay_final--;
+
+    if (delay_final == 0)
+    {
+        room_goto(Final);
+    }
+}
 

@@ -25,7 +25,7 @@
             }
         }
 
-        with (oParedeInvisivel) {
+        with (oParedeInvisivelFLOAT) {
             solid = false;
             visible = false;
         }
@@ -52,7 +52,7 @@
             }
         }
 
-        with (oParedeInvisivel) {
+        with (oParedeInvisivelFLOAT) {
             solid = true;
             visible = false;
         }
@@ -63,7 +63,7 @@
     image_index = 0;
     image_speed = 0; 
     
-    with (oParedeInvisivel) {
+    with (oParedeInvisivelFLOAT) {
         solid = true;
         visible = false;
     }

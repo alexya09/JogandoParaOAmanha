@@ -18,3 +18,11 @@ global.dialogoInicio = false;
 global.pontuacao = 0;
 
 global.liberafase3 = false;
+
+global.vilao_derrotado = false;
+
+script_execute(scr_actions); 
+
+script_execute(scr_topics);
+
+delay_final = -5;

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"HabilitarMovimento",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"HabilitarMovimento",
+  "parent":{
+    "name":"Dialogo",
+    "path":"folders/Dialogo.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

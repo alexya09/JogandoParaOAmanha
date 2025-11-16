@@ -1,1 +1,0 @@
-startDialogue("minha_cena_com_imagem");

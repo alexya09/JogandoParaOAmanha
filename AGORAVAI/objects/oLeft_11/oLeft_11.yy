@@ -22,10 +22,9 @@
   "physicsSensor":false,
   "physicsShape":2,
   "physicsShapePoints":[
-    {"x":18.995735,"y":1.7072353,},
+    {"x":17.995735,"y":1.7072353,},
     {"x":12.0,"y":9.0,},
-    {"x":3.0,"y":2.0,},
-    {"x":10.418832,"y":1.3363681,},
+    {"x":8.0,"y":8.0,},
   ],
   "physicsStartAwake":true,
   "properties":[],

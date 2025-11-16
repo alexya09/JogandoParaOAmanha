@@ -6,6 +6,6 @@ escala_texto_y = 1;
 
 acao = function()
 {
-	instance_activate_object(oLeft);
+	instance_activate_object(oLeft_36);
 
 }

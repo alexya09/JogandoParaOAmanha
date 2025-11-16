@@ -15,8 +15,8 @@ var y1 = gui_altura/2;
 var m_x = device_mouse_x_to_gui(0);
 var m_y = device_mouse_y_to_gui(0);
 
-show_debug_message(m_x);
-show_debug_message(m_y);
+//show_debug_message(m_x);
+//show_debug_message(m_y);
 
 for(var i=0; i < op_max; i++)
 {

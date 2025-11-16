@@ -1,39 +1,60 @@
+
 image_xscale = escala_x * 0.3;
 image_yscale = escala_y * 1.3;
-
 escala_texto_x = 0.3;
 escala_texto_y = 1.3;
 
-acao();
-botao_pressionado = true;
+if (array_length(global.rampas_selecionadas) != array_length(global.rampas_corretas)) {
+    show_debug_message("ERRO: Número incorreto de rampas.");
+	startDialogue("erradofase3");
+    exit; 
+}
 
-for (var i = 0; i < ds_list_size(global.rampas_pos); i++) {
-    var info = global.rampas_pos[| i];
-    var inst = info[0];       // instância real da rampa
-    var objType = info[1];    // tipo do objeto da instância
+var todas_corretas = true; 
 
-    var manter = false;
+for (var i = 0; i < array_length(global.rampas_selecionadas); i++) {
+    
+    var rampa_colocada_id = global.rampas_selecionadas[i];
+    
+    var tipo_da_rampa_colocada = object_get_name(rampa_colocada_id.object_index); 
+    
+    var encontrada_na_lista_correta = false;
 
-    // verifica se o objeto da instância está no vetor de rampas selecionadas
-    for (var j = 0; j < array_length(global.rampas_selecionadas); j++) {
-        if (global.rampas_selecionadas[j] == objType) {
-            manter = true;
+    for (var j = 0; j < array_length(global.rampas_corretas); j++) {
+        
+        var tipo_da_rampa_correta = object_get_name(global.rampas_corretas[j]);
+
+        if (tipo_da_rampa_colocada == tipo_da_rampa_correta) {
+            encontrada_na_lista_correta = true;
             break;
         }
     }
-
-    // se não estiver, destrói a instância
-    if (!manter && instance_exists(inst)) {
-        with (inst) instance_destroy();
+    
+    if (!encontrada_na_lista_correta) {
+        todas_corretas = false;
+        break;
     }
 }
 
-
-
-if (instance_exists(oBall)) {
-    instance_activate_object(oBall);  
+if (todas_corretas) {
+    show_debug_message("CORRETO! Liberando a bola.");
+    if (instance_exists(oBall)) {
+        instance_activate_object(oBall);  
+    } else {
+        var bola = instance_create_layer(235, 76, "Paredes", oBall); 
+        bola.image_xscale = 0.7;  
+        bola.image_yscale = 0.7;  
+    }
+    
+    
 } else {
-    var bola = instance_create_layer(235, 76, "Paredes", oBall); // cria na layer correta
-    bola.image_xscale = 0.7;  
-    bola.image_yscale = 0.7;  
+    show_debug_message("ERRADO! Tente novamente.");
+	startDialogue("erradofase3");
+  
+    for (var i = 0; i < array_length(global.rampas_selecionadas); i++) {
+        if (instance_exists(global.rampas_selecionadas[i])) {
+            instance_destroy(global.rampas_selecionadas[i]);
+        }
+    }
+    global.rampas_selecionadas = [];
 }

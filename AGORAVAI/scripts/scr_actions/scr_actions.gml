@@ -7,21 +7,35 @@
 #macro SET_UI new SetUIAction
 #macro IMAGE new ImageAction
 #macro IMAGE_FADE_OUT new ImageFadeOutAction
+#macro CUTSCENE_TEXT new CutsceneTextAction 
 
 function DialogueAction() constructor {
 	act = function() { };
 }
 
-// Define new text to type out
+// 1. TextAction (Texto Normal, Requer ENTER)
 function TextAction(_text) : DialogueAction() constructor {
 	text = _text;
-
+    is_cutscene_text = false; // Flag para avanço manual
+    
 	act = function(textbox) {
-		textbox.setText(text);
+        // Chamamos setText com a flag de avanço manual
+		textbox.setText(text, is_cutscene_text); 
 	}
 }
 
-//set the speaker optionally its portrait and side the portrait is on
+// 2. CutsceneTextAction (Texto Cutscene, Avanço Automático)
+function CutsceneTextAction(_text) : DialogueAction() constructor {
+	text = _text;
+    is_cutscene_text = true; // Flag para avanço automático
+
+	act = function(textbox) {
+        // Chamamos setText com a flag de avanço automático
+		textbox.setText(text, is_cutscene_text); 
+	}
+}
+
+// 3. SpeakerAction
 function SpeakerAction(_name, _sprite = undefined, _side = undefined): DialogueAction() constructor
 {
 	name = _name;
@@ -47,29 +61,31 @@ function SpeakerAction(_name, _sprite = undefined, _side = undefined): DialogueA
 	
 }
 
+// 4. ArrowAction
 function ArrowAction(_x, _y, _dir) : DialogueAction() constructor {
-    arrow_x = _x;
-    arrow_y = _y;
-    arrow_dir = _dir;
+    arrow_x = _x;
+    arrow_y = _y;
+    arrow_dir = _dir;
 
-    act = function(textbox) {
-        // Remove seta antiga
-        if (object_exists(oTutorialSeta)) {
-            if (instance_exists(oTutorialSeta)) {
-                instance_destroy(oTutorialSeta);
-            }
-        }
+    act = function(textbox) {
+        // Remove seta antiga
+        if (object_exists(oTutorialSeta)) {
+            if (instance_exists(oTutorialSeta)) {
+                instance_destroy(oTutorialSeta);
+            }
+        }
 
-        // Cria nova seta (a menos que seja -1, -1)
-        if (arrow_x != -1) {
-            var arrow = instance_create_layer(arrow_x, arrow_y, "UI", oTutorialSeta);
-            arrow.dir = arrow_dir;
-        }
-
-    }
+        // Cria nova seta (a menos que seja -1, -1)
+        if (arrow_x != -1) {
+            var arrow = instance_create_layer(arrow_x, arrow_y, "UI", oTutorialSeta);
+            arrow.dir = arrow_dir;
+        }
+        
+        textbox.next(); // Avança imediatamente após criar/destruir a seta
+    }
 }
 
-// Define a branch in the dialogue
+// 5. ChoiceAction
 function ChoiceAction(_text) : DialogueAction() constructor {
 	text = _text;
 
@@ -79,14 +95,14 @@ function ChoiceAction(_text) : DialogueAction() constructor {
 		array_push(options, argument[i]);
 
 	act = function(textbox) {
-		textbox.setText(text);
+		textbox.setText(text); // Aqui, o setText não precisa da flag, pois é uma escolha
 		textbox.options = options;
 		textbox.option_count = array_length(options);
 		textbox.current_option = 0;
 	}
 }
 
-// Place options within the ChoiceAction
+// 6. OptionAction
 function OptionAction(_text, _topic): DialogueAction() constructor {
 	text = _text;
 	topic = _topic;
@@ -96,7 +112,7 @@ function OptionAction(_text, _topic): DialogueAction() constructor {
 	}
 }
 
-// Automatically go to a specified topic
+// 7. GotoAction
 function GotoAction(_topic): DialogueAction() constructor {
 	topic = _topic;
 
@@ -105,15 +121,14 @@ function GotoAction(_topic): DialogueAction() constructor {
 	}
 }
 
+// 8. ImageAction (Corrigida: Deve chamar next() para avançar para o texto)
 function ImageAction(_sprite, _x = undefined, _y = undefined, _alpha = 1) : DialogueAction() constructor {
-	// Variáveis salvas do construtor
 	sprite = _sprite;
 	img_x = _x;
 	img_y = _y;
-	img_alpha = _alpha; // O alfa é salvo aqui
+	img_alpha = _alpha;
 
 	act = function(textbox) {
-		// Para qualquer fade em andamento (da melhoria opcional)
 		textbox.is_fading_image = false; 
 
 		if (sprite == noone) {
@@ -138,28 +153,29 @@ function ImageAction(_sprite, _x = undefined, _y = undefined, _alpha = 1) : Dial
 				textbox.current_image_y = img_y;
 			}
 			
-			// Define o Alfa (Linha corrigida)
-			textbox.current_image_alpha = img_alpha; // <-- Corrigido
+			textbox.current_image_alpha = img_alpha;
 		}
 		
-		textbox.next();
+		// VITAL: Avança imediatamente para a próxima ação (que deve ser o CUTSCENE_TEXT)
+		textbox.next(); 
 	}
 }
 
+// 9. SetUIAction
 function SetUIAction(_show_box, _show_speaker) : DialogueAction() constructor {
-	show_box = _show_box;         
+	show_box = _show_box; 		
 	show_speaker = _show_speaker; 
 
 	act = function(textbox) {
 		textbox.draw_box = show_box;
 		textbox.draw_speaker_name = show_speaker;
 		
-		textbox.next();
+		textbox.next(); // Avança imediatamente após a mudança de UI
 	}
 }
 
+// 10. ImageFadeOutAction
 function ImageFadeOutAction(_speed = 0.05) : DialogueAction() constructor {
-	
 	speed = _speed; 
 
 	act = function(textbox) {
@@ -169,6 +185,6 @@ function ImageFadeOutAction(_speed = 0.05) : DialogueAction() constructor {
 			textbox.image_fade_speed = speed;
 		}
 	
-		textbox.next();
+		textbox.next(); // Avança imediatamente após iniciar o fade
 	}
 }

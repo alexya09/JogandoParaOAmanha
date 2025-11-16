@@ -1,3 +1,3 @@
-instance_destroy();
-comecou = false;
+alarm[0] = room_speed * 3;
+
 

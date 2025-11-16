@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"MarcarVilaoDerrotado",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MarcarVilaoDerrotado",
+  "parent":{
+    "name":"Dialogo",
+    "path":"folders/Dialogo.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
