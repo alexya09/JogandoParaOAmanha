@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"atencao",
-    "path":"sprites/atencao/atencao.yy",
+    "name":"teclaEanimada",
+    "path":"sprites/teclaEanimada/teclaEanimada.yy",
   },
   "spriteMaskId":null,
   "visible":true,

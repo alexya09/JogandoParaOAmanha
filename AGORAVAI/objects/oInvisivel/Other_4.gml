@@ -1,4 +1,4 @@
-//startClass("turingTumble");
+startClass("turingTumble");
 
 // Só executa este código se ainda não tiver sido executado
 if (!global.listas_iniciadas) 
@@ -49,8 +49,8 @@ if (!global.listas_iniciadas)
         }
     }
 
-    global.rampas_corretas = [oLeft, oLeft_1, oLeft_10, oLeft_11, oLeft_12, oLeft_13, oLeft_14, oLeft_15, oLeft_16, oLeft_51];
-    
+    //global.rampas_corretas = [oLeft, oLeft_1, oLeft_10, oLeft_11, oLeft_12, oLeft_13, oLeft_14, oLeft_15, oLeft_16, oLeft_51];
+    global.rampas_corretas = [oLeft_10, oLeft_11, oLeft_12, oLeft_13, oLeft_14, oLeft_15];
     // Configura a flag para que este código não rode novamente
     global.listas_iniciadas = true; 
     

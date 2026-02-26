@@ -7,6 +7,11 @@ if (keyboard_check_pressed(ord("F"))) { // Substitua 'F' pela tecla desejada
 	 instance_deactivate_object(camila_player);
  }
  
+  if (room_get_name(room) == "entre1e0")
+ {
+	 instance_deactivate_object(camila_player);
+ }
+ 
   if (room_get_name(room) == "Final")
  {
 	 instance_deactivate_object(camila_player);
@@ -17,10 +22,35 @@ if (keyboard_check_pressed(ord("F"))) { // Substitua 'F' pela tecla desejada
 	 instance_deactivate_object(camila_player);
  }
  
+   if (room_get_name(room) == "Fase3_1")
+ {
+	 instance_deactivate_object(camila_player);
+ }
+ 
+   if (room_get_name(room) == "entre0e2")
+ {
+	 instance_deactivate_object(camila_player);
+ }
+ 
+    if (room_get_name(room) == "entre2e0")
+ {
+	 instance_deactivate_object(camila_player);
+ }
+ 
+    if (room_get_name(room) == "entre1e0")
+ {
+	 instance_deactivate_object(camila_player);
+ }
+ 
 
 if (global.pontuacao == 4) {
     liberafase2 = true;
+	//global.dialogoInicio = true;
 }
+
+//if (obj_demo.inicio == true) {
+  //  global.dialogoInicio = true;
+//}
 
 //show_debug_message(global.pontuacao);
 //show_debug_message(liberafase2);
@@ -37,7 +67,7 @@ if (global.vilao_derrotado)
         with (Boss) instance_destroy();
     }
 
-    delay_final = room_speed * 1; 
+    delay_final = room_speed * 5; 
 }
 
 

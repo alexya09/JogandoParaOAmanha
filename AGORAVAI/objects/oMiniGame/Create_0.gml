@@ -1,6 +1,7 @@
 sequencia = [];
 setas_pressionadas = [];
 
+
 index_sequencia = 0;
 executando = false;
 velocidade = 4;

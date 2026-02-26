@@ -1,14 +1,16 @@
-// Get input
+/// === INPUT ===
 var confirm = keyboard_check_pressed(confirm_key);
 
-// Type out the text
+
+/// === TYPING TEXT ===
 text_progress = min(text_progress + text_speed, text_length);
 
-// Fade da imagem
+
+/// === IMAGE FADE ===
 if (is_fading_image) {
     current_image_alpha -= image_fade_speed;
     current_image_alpha = max(0, current_image_alpha);
-    
+
     if (current_image_alpha == 0) {
         is_fading_image = false;
         show_image = false;
@@ -16,31 +18,31 @@ if (is_fading_image) {
     }
 }
 
-// Delay do input
+
+/// === INPUT DELAY (ANTI-SPAM) ===
 if (input_delay > 0) {
     input_delay--;
     exit;
 }
 
-// Se ainda está digitando e apertou ENTER → skip
+
+/// === SKIP TEXT WHILE TYPING ===
 if (text_progress < text_length) {
+
     if (confirm) {
-        text_progress = text_length;
+        text_progress = text_length; // skip
     }
+
     exit;
 }
 
-// ------------------------------
-// TEXTO COMPLETO (text_progress == text_length)
-// ------------------------------
 if (text_progress == text_length) {
 
-    // --------------------------
-    // TEM OPÇÕES (CHOICE)
-    // --------------------------
+    /// =============================================================
+    /// 1. OPÇÕES
+    /// =============================================================
     if (option_count > 0) {
 
-        // NAVEGAÇÃO ↑ ↓
         var up = keyboard_check_pressed(up_key);
         var down = keyboard_check_pressed(down_key);
 
@@ -49,33 +51,60 @@ if (text_progress == text_length) {
         if (change != 0) {
             current_option += change;
 
-            // wrap
             if (current_option < 0)
                 current_option = option_count - 1;
             else if (current_option >= option_count)
                 current_option = 0;
         }
 
-        // SELEÇÃO (ENTER)
-       if (confirm) {
-    var option = options[current_option];
-    options = [];
-    option_count = 0;
+        if (confirm) {
+            var option = options[current_option];
+            options = [];
+            option_count = 0;
 
-    // Libera o movimento quando a escolha for feita
-    if (instance_exists(oParentPlayer)) {
-        oParentPlayer.canMove = true;
+            if (instance_exists(oParentPlayer)) {
+               // oParentPlayer.canMove = true;
+            }
+
+            option.act(id);
+        }
+
+        exit;
     }
 
-    option.act(id);
-}
 
+
+    /// =============================================================
+    /// 2. CUTSCENE — ENTER TEM PRIORIDADE
+    /// =============================================================
+    if (is_current_action_cutscene) {
+
+        // ENTER = avançar imediatamente
+        if (confirm) {
+            next();
+            exit;
+        }
+
+        // SENÃO, auto-avanço
+        if (auto_advance_timer < 0) {
+            auto_advance_timer = auto_advance_delay;
+        }
+        else {
+            auto_advance_timer--;
+
+            if (auto_advance_timer <= 0) {
+                next();
+                exit;
+            }
+        }
+
+        exit;
     }
 
-    // --------------------------
-    // NÃO TEM OPÇÕES → NEXT
-    // --------------------------
-    else if (confirm) {
+
+
+    if (confirm) {
         next();
+        exit;
     }
 }

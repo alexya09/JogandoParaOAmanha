@@ -68,10 +68,12 @@ global.topicss[$"algoritmos"] = [
 	TEXT("Na sua aventura, você vai ter várias setas que representam ações como 'andar', 'virar para a esquerda' e 'virar para a direita'. Seu desafio é escolher 5 delas e colocar na ordem certa."),
 
 	TEXT("Se a sequência estiver correta, nossa personagem vai conseguir escapar do labirinto! Mas se estiver errada, ela vai acabar no caminho errado e teremos que tentar de novo."),
-
+	
+	
+	
 	TEXT("Pense bem: qual é o passo que vem primeiro? Qual é o último? E o que vem no meio? É assim que um programador pensa quando cria um algoritmo."),
 
-
+GOTO("tutorial2")
 	//TEXT("Monte a sequência de setas e descubra o caminho certo para a saída. Testar e ajustar faz parte do processo"),
 
 	//TEXT("Lembre-se dos controles:\n- Use o mouse para clicar nas setas para os espaços da sequência\n- Clique no botão com VERIFICA para testar\n- Clique no botão com X para limpar e tentar de novo"),

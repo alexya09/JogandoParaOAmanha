@@ -4,4 +4,4 @@ if (distance_to_object(oParentPlayer) <= 30)
 	oParentPlayer.canMove = false;
 	
 }
-alarm[0] = room_speed * 3;
+alarm[0] = room_speed * 4;

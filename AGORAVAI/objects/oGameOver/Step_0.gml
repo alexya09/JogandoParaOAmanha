@@ -3,8 +3,8 @@ if (place_meeting(x, y, oMiniGame)) {
 	//room_goto(GameOver);
 	//event_inherited();
 
-oMiniGame.x = 175;
-oMiniGame.y = 229;
+oMiniGame.x = 148;
+oMiniGame.y = 264;
 oMiniGame.sprite_index = spr_camila_idle_down;
 
 oMiniGame.destino_x = oMiniGame.x;  

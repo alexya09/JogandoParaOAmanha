@@ -1,16 +1,20 @@
 event_inherited();
 
-oMiniGame.x = 175;
-oMiniGame.y = 229;
-oMiniGame.sprite_index = spr_camila_idle_down;
 
-oMiniGame.destino_x = oMiniGame.x;  
-oMiniGame.destino_y = oMiniGame.y;
+with (oMiniGame) { 
+    x = 148;
+    y = 264;
+    sprite_index = spr_camila_idle_down;
+    
+   
+    destino_x = x; 
+    destino_y = y;
 
-oMiniGame.sequencia = [];  
-oMiniGame.setas_pressionadas = [];
+    sequencia = [];  
+    setas_pressionadas = [];
 
-oMiniGame.executando = false;
-oMiniGame.index_sequencia = 0;
+    executando = false;
+    index_sequencia = 0;
+}
 
 show_debug_message("Sequência apagada e posição resetada!");

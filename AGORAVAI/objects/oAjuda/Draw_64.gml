@@ -18,5 +18,5 @@ draw_set_valign(fa_top);
 draw_set_font(text_font);
 draw_set_color(text_color);
 
-draw_text(108,135,"Tente interagir \ncom outros personagens!"); 
+draw_text(108,135,"Tente interagir \ncom o ambiente!"); 
 

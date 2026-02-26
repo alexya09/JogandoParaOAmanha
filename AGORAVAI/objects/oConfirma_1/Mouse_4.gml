@@ -1,8 +1,9 @@
-
 image_xscale = escala_x * 0.3;
 image_yscale = escala_y * 1.3;
 escala_texto_x = 0.3;
 escala_texto_y = 1.3;
+
+//instance_deactivate_object(oberco);
 
 if (array_length(global.rampas_selecionadas) != array_length(global.rampas_corretas)) {
     show_debug_message("ERRO: Número incorreto de rampas.");
@@ -37,11 +38,13 @@ for (var i = 0; i < array_length(global.rampas_selecionadas); i++) {
 }
 
 if (todas_corretas) {
+	instance_deactivate_object(oberco);
+	instance_destroy(oberco);
     show_debug_message("CORRETO! Liberando a bola.");
     if (instance_exists(oBall)) {
         instance_activate_object(oBall);  
     } else {
-        var bola = instance_create_layer(235, 76, "Paredes", oBall); 
+        var bola = instance_create_layer(234, 96, "Paredes", oBall); 
         bola.image_xscale = 0.7;  
         bola.image_yscale = 0.7;  
     }

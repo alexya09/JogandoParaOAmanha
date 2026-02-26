@@ -41,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"pergunta",
-    "path":"sprites/pergunta/pergunta.yy",
+    "name":"teclaEanimada",
+    "path":"sprites/teclaEanimada/teclaEanimada.yy",
   },
   "spriteMaskId":null,
   "visible":true,

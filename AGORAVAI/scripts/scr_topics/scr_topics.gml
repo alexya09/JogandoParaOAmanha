@@ -195,7 +195,7 @@ global.topics[$ "inicial2"] = [
 
 	SPEAKER(" Camila ", PortraitCamila, PORTRAIT_SIDE.PORTRAITRIGHT),
 	TEXT("Vamos procurar um caminho"),
-	
+	GOTO("entrada_vilao")
 	
 ];
 
@@ -254,35 +254,35 @@ global.topics[$ "confronto"] = [
     SET_UI(true, true),
 
     SPEAKER(" Carmen ", PortraitCarmen, PORTRAIT_SIDE.PORTRAITLEFT),
-    TEXT("Aqui parece ser o núcleo do sistema, acho que já é o final... Espera, ali é o bug??"),
+    TEXT("Aqui parece ser o núcleo do sistema, \nacho que já é o final... Espera, ali é o bug??"),
 
     SPEAKER(" Camila ", PortraitCamila, PORTRAIT_SIDE.PORTRAITRIGHT),
-    TEXT("Parece que sim, e ele também parece estar nos encarando"),
+    TEXT("Parece que sim, e ele também parece \nestar nos encarando"),
 
     SPEAKER(" bug ", PortraitVilao2, PORTRAIT_SIDE.PORTRAITLEFT),
     TEXT("VOCÊS!!! EU JÁ ESTOU CANSADO DE VOCÊS!!!"),
     TEXT("Vocês estragaram tudo! Meus algoritmos estão bagunçados, minhas váriaveis não fazem sentido"),
-    TEXT("E agora, pra piorar, ainda chegaram no coração da minha máquina. DA MINHA CASA!"),
+    TEXT("E agora, pra piorar, ainda chegaram no \ncoração da minha máquina. DA MINHA CASA!"),
 
     SPEAKER(" Camila ", PortraitCamila, PORTRAIT_SIDE.PORTRAITRIGHT),
-    TEXT("Também cansamos de você, só queremos ir pra casa, sair daqui."),
+    TEXT("Também cansamos de você, só queremos \nir pra casa, sair daqui."),
 
     SPEAKER(" bug ", PortraitVilao2, PORTRAIT_SIDE.PORTRAITLEFT),
-    TEXT("HAHAHAHA, sair? Quem me dera! Mas não podem..."),
-    TEXT("Pra sair daqui, só há UMA maneira, mas vocês não tem o nível lógico necessário."),
+    TEXT("HAHAHAHA, sair? Quem me dera! Mas não \npodem..."),
+    TEXT("Pra sair daqui, só há UMA maneira, mas \nvocês não tem o nível lógico necessário."),
 
     SPEAKER(" Carmen ", PortraitCarmen, PORTRAIT_SIDE.PORTRAITLEFT),
     TEXT("Como assim? Chegamos tão longe, aposto que conseguimos!"),
 
     SPEAKER(" bug ", PortraitVilao2, PORTRAIT_SIDE.PORTRAITLEFT),
-    TEXT("Vocês deram sorte, garotas ingênuas. Mas agora só sorte não bastará."),
+    TEXT("Vocês deram sorte, garotas ingênuas. \nMas agora só sorte não bastará."),
 
     SPEAKER(" Camila ", PortraitCamila, PORTRAIT_SIDE.PORTRAITRIGHT),
-    TEXT("Mas então nos diga, como provamos ser capazes?"),
+    TEXT("Mas então nos diga, como provamos ser \ncapazes?"),
 
     SPEAKER(" bug ", PortraitVilao2, PORTRAIT_SIDE.PORTRAITLEFT),
-    TEXT("Bem, se não querem me ouvir, terei que provar para vocês!"),
-    TEXT("Para poder sair daqui, vocês tem que pelo menos conseguir me ganhar em um..."),
+    TEXT("Bem, se não querem me ouvir, terei que \nprovar para vocês!"),
+    TEXT("Para poder sair daqui, vocês tem que \npelo menos conseguir me ganhar em um..."),
     TEXT("!!!! DEBATE LÓGICO !!!!"),
 
     GOTO("debate_introducao")
@@ -295,10 +295,10 @@ global.topics[$ "debate_introducao"] = [
     TEXT("Hmm, como será que vai ser isso?"),
 
     SPEAKER(" Carmen ", PortraitCarmen, PORTRAIT_SIDE.PORTRAITLEFT),
-    TEXT("Não sei, mas sei que vamos conseguir, aprendemos tudo o que precisávamos!"),
+    TEXT("Não sei, mas sei que vamos conseguir, \naprendemos tudo o que precisávamos!"),
 
     SPEAKER(" bug ", PortraitVilao2, PORTRAIT_SIDE.PORTRAITLEFT),
-    TEXT("Vocês nunca conseguirão, isso não vai ser fácil como variáveis e essas coisas!"),
+    TEXT("Vocês nunca conseguirão, isso não vai \nser fácil como variáveis e essas coisas!"),
     TEXT("Vou falar frases incompletas do sistema, vocês nunca conseguirão desvendá-las"),
 
     GOTO("debate")
@@ -309,7 +309,7 @@ global.topics[$ "debate"] = [
 
     SPEAKER(" bug ", PortraitVilao2, PORTRAIT_SIDE.PORTRAITLEFT),
     
-    CHOICE("Vamos ver então! Já que vocês aprenderam variáveis, o número 4.5 pode ser float ______ int!",
+    CHOICE("Vamos ver então! Já que vocês \naprenderam variáveis, o número 4.5 pode ser float ______ int!",
         OPTION("ou", "Resposta_Errada1"),
         OPTION("e", "Resposta_Errada1"),
         OPTION("mas não", "Resposta_Certa1")
@@ -368,5 +368,19 @@ global.topics[$ "Resposta_Final_Errada"] = [
     TEXT("Vocês realmente me surpreenderam várias vezes, mas..."),
     TEXT("Espera, não pode ser \ERROR–ERROR–ERROR…"),
     TEXT("Sistema reiniciando, sistema reiniciando"),
+	
+];
+
+global.topics[$ "fase4_carmen"] = [
+	SET_UI(true, true),
+	SPEAKER(" Carmen ", PortraitCarmen, PORTRAIT_SIDE.PORTRAITLEFT),
+	TEXT("Camila, olha o tamanho disso! O Bug tá furioso, acho que chegamos no núcleo."),
+	TEXT("Relaxa, a gente já domina a lógica. Vamos mostrar pra esse erro quem é que manda!"),
+];
+
+global.topics[$ "generico_carmen"] = [
+	SET_UI(true, true),
+	SPEAKER(" Carmen ", PortraitCarmen, PORTRAIT_SIDE.PORTRAITLEFT),
+	TEXT("Eu acho que esse Bug fala demais e programa de menos. A gente vai vencer ele rapidinho!"),
 	
 ];

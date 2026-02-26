@@ -10,12 +10,24 @@
     global.tutorial2_exibido = false;
 }
 
+if(room_get_name(room) == "Fase1")
+{
+global.tp_x = 74;
+global.tp_y = 319;
+global.tp_face = 0;
+}
+
+
+
 //global.dialogue_topic = topic; // armazena o tópico antes de criar
 
 liberafase2 = false;
+//liberafase3 = false;
 global.dialogoInicio = false;
 
 global.pontuacao = 0;
+
+global.tutorial_exibido = false;
 
 global.liberafase3 = false;
 

@@ -83,9 +83,9 @@ current_image_alpha = 1;
 is_fading_image = false; 
 image_fade_speed = 0.05; 
 
-is_current_action_cutscene = false; // Flag para saber se a ação atual é cutscene
-auto_advance_delay = 60; // 60 frames = 1 segundo de espera
-auto_advance_timer = -1; // Contador
+is_current_action_cutscene = false;
+auto_advance_delay = 300; // 60 frames = 1 segundo de espera
+auto_advance_timer = -1;
 
 dialogue_end_callback = noone;
 
@@ -96,7 +96,7 @@ dialogue_end_callback = noone;
 // Start a conversation
 // Start a conversation
 setTopic = function(topic) {
-    // ESTA FUNÇÃO É VITAL PARA O startDialogue FUNCIONAR!
+    
 	actions = global.topics[$ topic];
 	current_action = -1;
 		
@@ -120,7 +120,7 @@ next = function() {
         exit;
     }
 
-    // Ainda há ações → executa
+   
     actions[current_action].act(id);
 }
 
@@ -138,7 +138,11 @@ setText = function(newText, _is_cutscene_text = false) {
 
 dialogue_topic = global.dialogue_topic;
 
-if (dialogue_topic == "porta" || dialogue_topic == "Primeiro CP") {
+if (dialogue_topic == "porta" || dialogue_topic == "Primeiro CP"|| dialogue_topic == "bateu" || dialogue_topic == "FIM") {
     // Isso é um alarme, mantenha se for intencional
 	alarm[0] = room_speed * 2; // Exibe por 2 segundos
+}
+
+if (instance_exists(oParentPlayer)) {
+    oParentPlayer.canMove = false;
 }

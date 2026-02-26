@@ -23,6 +23,11 @@ draw_set_valign(fa_top);
 draw_set_font(text_font);
 draw_set_color(text_color);
 
+draw_set_font(Font7_4);
+draw_text(x + 80,y - 595,"Aperte qualquer tecla para fechar este menu"); 
+//draw_text(x + 280 ,y - 590,"para fechar este tutorial");
+
+draw_set_font(text_font);
 draw_text(x + 280,y - 520,"Use as setas ou WASD"); 
 draw_text(x + 280 ,y - 490,"para se movimentar");
 draw_sprite(spr_setas_1,0, x + 50, y - 550);
@@ -38,3 +43,4 @@ draw_text(x + 200,y - 350,"para iniciar dialogos");
 draw_sprite(spr_e, 0, x + 50, y - 180);
 draw_text(x + 200,y - 180,"Use a tecla E");
 draw_text(x + 200,y - 150,"para interagir com objetos");
+draw_text(x + 200,y - 120,"e navegar pelas aulas");

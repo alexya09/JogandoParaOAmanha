@@ -39,3 +39,8 @@ interactKeyPressed = noone;
 interaction_range = 10;
 
 canMove = true;
+
+if (variable_global_exists("tp_x") && global.tp_x != -1) {
+    // não sobrescreva a direção/estado ao teleportar
+    exit;
+}

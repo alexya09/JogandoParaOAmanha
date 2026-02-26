@@ -1,7 +1,7 @@
 
 /// Customizable Properties
 
-// Input
+// Input vk_enter;
 confirm_key = ord("E");
 max_input_delay = 5; // how many frames to ignore input
 input_delay = max_input_delay;

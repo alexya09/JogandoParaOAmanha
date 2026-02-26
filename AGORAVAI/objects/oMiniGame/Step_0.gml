@@ -1,5 +1,5 @@
 // Step do obj_miniGame
-
+//depth = -y;
 // DEBUG: mostra estado atual
 show_debug_message("Sequência: " + string(oMiniGame.sequencia));
 show_debug_message("Setas pressionadas: " + string(oMiniGame.setas_pressionadas));
