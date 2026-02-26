@@ -24,11 +24,11 @@ global.topics[$ "fase1e2"] = [
 
 
 	SPEAKER(" Carmen ", PortraitCarmen, PORTRAIT_SIDE.PORTRAITLEFT),
-	TEXT("Nenhuma dessas portas parece ser a saída…"),
+	TEXT("Nenhuma dessas portas parece ser a saida..."),
 
 	SPEAKER(" Camila ", PortraitCamila, PORTRAIT_SIDE.PORTRAITRIGHT),
 	TEXT("Temos que tentar."),
-	TEXT("Ainda tem duas portas, alguma deve ser a saída!"),
+	TEXT("Ainda tem duas portas, alguma deve ser a saida!"),
 ];
 
 global.topics[$ "dicas"] = [
@@ -323,17 +323,46 @@ global.topics[$ "Resposta_Errada1"] = [
     GOTO("debate")
 ];
 
+// PERGUNTA 2: FASE 2 (Algoritmos - Baseado na aula "algoritmos")
 global.topics[$ "Resposta_Certa1"] = [
     SET_UI(true, true),
 
     SPEAKER(" bug ", PortraitVilao2, PORTRAIT_SIDE.PORTRAITLEFT),
-    TEXT("Essa era fácil, a próxima que vai acabar com vocês!"),
-    CHOICE("Quero ver então, se um dia está nublado, _____ ele não está ensolarado",
-        OPTION("mas", "Resposta_Errada2"),
-        OPTION("então", "Resposta_Certa2"),
-        OPTION("somente", "Resposta_Errada2")
+    TEXT("Acertaram por sorte! Mas e no labirinto?"),
+    CHOICE("O conjunto de setas na ordem certa para chegar \nà saída, como uma receita de bolo, se chama...",
+        OPTION("Algoritmo", "Resposta_Certa2"),
+        OPTION("Variável", "Resposta_Errada2"),
+        OPTION("Booleano", "Resposta_Errada2")
     )
 ];
+
+global.topics[$ "Resposta_Errada2"] = [
+    SET_UI(true, true),
+    SPEAKER(" bug ", PortraitVilao2, PORTRAIT_SIDE.PORTRAITLEFT),
+    TEXT("Erraram! Aquela sequência de passos que diz ao computador o que fazer tem um nome. De novo!"),
+    GOTO("Resposta_Certa1")
+];
+
+// PERGUNTA 3: FASE 3 (Turing Tumble - Baseado na aula "turingTumble")
+global.topics[$ "Resposta_Certa2"] = [
+    SET_UI(true, true),
+
+    SPEAKER(" bug ", PortraitVilao2, PORTRAIT_SIDE.PORTRAITLEFT),
+    TEXT("Grrr! E o desafio das bolinhas, hein?"),
+    CHOICE("As rampas funcionavam como ______ \npara guiar os dados passo a passo.",
+        OPTION("Caixinhas", "Resposta_Errada3"),
+        OPTION("Instruções", "Resposta_Certa3"),
+        OPTION("Números", "Resposta_Errada3")
+    )
+];
+
+global.topics[$ "Resposta_Errada3"] = [
+    SET_UI(true, true),
+    SPEAKER(" bug ", PortraitVilao2, PORTRAIT_SIDE.PORTRAITLEFT),
+    TEXT("Incorreto! Pensem bem, o que as rampas faziam com a bolinha para ela não se perder? Mais uma chance!"),
+    GOTO("Resposta_Certa2")
+];
+
 
 global.topics[$ "Resposta_Errada2"] = [
     SET_UI(true, true),
@@ -342,7 +371,7 @@ global.topics[$ "Resposta_Errada2"] = [
     GOTO("Resposta_Certa1")
 ];
 
-global.topics[$ "Resposta_Certa2"] = [
+global.topics[$ "Resposta_Certa3"] = [
     SET_UI(true, true),
 
     SPEAKER(" bug ", PortraitVilao2, PORTRAIT_SIDE.PORTRAITLEFT),
